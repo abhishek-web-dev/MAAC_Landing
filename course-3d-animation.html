@@ -1,0 +1,2410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Animation Courses in Ghaziabad | MAAC RDC — AD3D Edge Plus, D3D, DAFM</title>
+  <link rel="icon" href="Images/favicon.png" type="image/png" />
+  <meta name="description"
+    content="Master 3D Animation at MAAC Ghaziabad RDC. Enrol in AD3D Edge Plus, D3D, or DAFM — complete pipeline training in Maya, ZBrush, Houdini & more. NSDC & MESC Certified." />
+  <meta name="keywords"
+    content="3D animation course Ghaziabad, AD3D Edge Plus, D3D animation, DAFM, Maya training, ZBrush course, MAAC 3D animation, animation institute Ghaziabad" />
+  <meta name="robots" content="index, follow" />
+ <link rel="canonical" href="https://maacghaziabad.in/course-3d-animation.html" />
+  <meta property="og:title" content="3D Animation Courses | MAAC Ghaziabad RDC" />
+  <meta property="og:description"
+    content="AD3D Edge Plus, D3D & DAFM — complete 3D animation pipeline training at MAAC Ghaziabad RDC." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600;700&family=Bebas+Neue&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+ 
+
+  <style>
+    /* ═══════════════════════════════════════════
+   TOKENS (Localized Overrides)
+═══════════════════════════════════════════ */
+    :root {
+      --red: #D2232A;
+      --red-dark: #A51B21;
+      --gold: #D4AF37;
+      --gold-light: #F0D060;
+      --white: #FFFFFF;
+      --off-white: #F8F7F4;
+      --ink: #0F0F0F;
+      --ink-2: #1A1A1A;
+      --muted: #6B7280;
+      --muted-2: #9CA3AF;
+      --border: rgba(0, 0, 0, .08);
+      --glass-bg: rgba(255, 255, 255, .85);
+      --glass-blur: blur(20px);
+      --shadow-sm: 0 2px 16px rgba(0, 0, 0, .06);
+      --shadow-md: 0 8px 40px rgba(0, 0, 0, .10);
+      --shadow-lg: 0 24px 64px rgba(0, 0, 0, .14);
+      --trans: .35s cubic-bezier(.4, 0, .2, 1);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--white);
+      font-family: 'Outfit', sans-serif;
+      color: var(--ink);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    ::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f0f0f0;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--gold);
+      border-radius: 4px;
+    }
+
+    /* ── TYPOGRAPHY ── */
+    .font-display {
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    .font-impact {
+      font-family: 'Bebas Neue', sans-serif;
+    }
+
+    .sec-eyebrow {
+      font-family: 'Outfit', sans-serif;
+      font-size: .72rem;
+      font-weight: 600;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      margin-bottom: 1rem;
+    }
+
+    .sec-eyebrow::before {
+      content: '';
+      display: inline-block;
+      width: 24px;
+      height: 2px;
+      background: var(--gold);
+      flex-shrink: 0;
+    }
+
+    .divider-gold {
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--gold), var(--red));
+      border-radius: 4px;
+      margin: 1.2rem 0;
+    }
+
+    .divider-gold.centered {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ── BUTTONS ── */
+    .btn-red-local {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      background: var(--red);
+      color: #fff;
+      font-family: 'Outfit', sans-serif;
+      font-size: .82rem;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: .85rem 2rem;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all var(--trans);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-red-local:hover {
+      background: var(--red-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(210, 35, 42, .4);
+      color: #fff;
+    }
+
+    .btn-gold-local {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      background: var(--gold);
+      color: var(--ink);
+      font-family: 'Outfit', sans-serif;
+      font-size: .82rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: .85rem 2rem;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all var(--trans);
+    }
+
+    .btn-gold-local:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(212, 175, 55, .4);
+      color: var(--ink);
+    }
+
+    /* Local Hero Styles */
+
+    /* ══════════════════════════
+   HERO
+══════════════════════════ */
+    .hero {
+      position: relative;
+      height: 100vh;
+      min-height: 600px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, #050507 0%, #0a0a12 40%, #0c0508 100%);
+    }
+
+    /* animated mesh */
+    .hero-mesh {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      background-image:
+        linear-gradient(rgba(212, 175, 55, .03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(212, 175, 55, .03) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+
+    .hero-glow-1 {
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(212, 175, 55, .12) 0%, transparent 70%);
+      top: -100px;
+      right: -100px;
+      pointer-events: none;
+      animation: floatGlow 8s ease-in-out infinite alternate;
+    }
+
+    .hero-glow-2 {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(210, 35, 42, .1) 0%, transparent 70%);
+      bottom: -80px;
+      left: 5%;
+      pointer-events: none;
+      animation: floatGlow 6s ease-in-out infinite alternate-reverse;
+    }
+
+    @keyframes floatGlow {
+      from {
+        transform: translate(0, 0) scale(1);
+      }
+
+      to {
+        transform: translate(30px, 20px) scale(1.15);
+      }
+    }
+
+    /* floating 3D cubes deco */
+    .cube-deco {
+      position: absolute;
+      right: 8%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 420px;
+      height: 420px;
+      pointer-events: none;
+      animation: rotateSlow 20s linear infinite;
+    }
+
+    .cube-deco svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    @keyframes rotateSlow {
+      from {
+        transform: translateY(-50%) rotate(0deg);
+      }
+
+      to {
+        transform: translateY(-50%) rotate(360deg);
+      }
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding-top: calc(var(--header-height, 120px) + 2rem);
+    }
+
+    @media (max-height: 580px) {
+      .hero-title {
+        font-size: 2.8rem;
+      }
+
+      .hero-desc {
+        display: -webkit-box;
+        --webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: .6rem;
+      background: rgba(212, 175, 55, .1);
+      border: 1px solid rgba(212, 175, 55, .3);
+      border-radius: 100px;
+      padding: .35rem 1.1rem;
+      font-family: 'Outfit', sans-serif;
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.4rem;
+      opacity: 0;
+      /* GSAP anim */
+    }
+
+    .hero-tag i {
+      font-size: .85rem;
+    }
+
+    .hero-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3rem, 7vw, 6.5rem);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.1;
+      letter-spacing: -.02em;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-title em {
+      color: var(--gold-light);
+      font-style: italic;
+    }
+
+    .hero-title .line-red {
+      color: var(--red);
+    }
+
+    .hero-desc {
+      font-family: 'Outfit', sans-serif;
+      font-size: clamp(.88rem, 1.6vw, 1rem);
+      color: rgba(255, 255, 255, .65);
+      max-width: 520px;
+      line-height: 1.8;
+      margin-bottom: 2.5rem;
+    }
+
+    /* Hero meta pills */
+    .hero-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .6rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .h-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      background: rgba(255, 255, 255, .07);
+      border: 1px solid rgba(255, 255, 255, .12);
+      border-radius: 8px;
+      padding: .45rem .9rem;
+      font-family: 'Outfit', sans-serif;
+      font-size: .72rem;
+      font-weight: 600;
+      color: rgba(255, 255, 255, .8);
+      letter-spacing: .04em;
+      backdrop-filter: blur(8px);
+    }
+
+    .h-pill i {
+      color: var(--gold);
+    }
+
+    /* scroll hint */
+    .scroll-hint {
+      position: absolute;
+      bottom: 2.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: .5rem;
+      z-index: 3;
+      color: rgba(255, 255, 255, .4);
+      font-family: 'Outfit', sans-serif;
+      font-size: .6rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      animation: bounce 2.5s ease-in-out infinite;
+    }
+
+    .scroll-hint .sh-line {
+      width: 1px;
+      height: 40px;
+      background: linear-gradient(to bottom, rgba(255, 255, 255, .4), transparent);
+    }
+
+    @keyframes bounce {
+
+      0%,
+      100% {
+        transform: translateX(-50%) translateY(0)
+      }
+
+      50% {
+        transform: translateX(-50%) translateY(8px)
+      }
+    }
+
+    /* ══════════════════════════
+   STATS BAND
+══════════════════════════ */
+    .stats-band {
+      background: var(--ink);
+      padding: 3rem 0;
+    }
+
+    .stat-item {
+      text-align: center;
+      padding: 1rem;
+      border-right: 1px solid rgba(255, 255, 255, .07);
+    }
+
+    .stat-item:last-child {
+      border-right: none;
+    }
+
+    .stat-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2.5rem, 4vw, 3.5rem);
+      line-height: 1;
+      color: var(--gold);
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: .05em;
+    }
+
+    .stat-suf {
+      font-size: 65%;
+      color: var(--red);
+      margin-top: .1em;
+    }
+
+    .stat-lbl {
+      font-family: 'Outfit', sans-serif;
+      font-size: .68rem;
+      font-weight: 600;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, .4);
+      margin-top: .35rem;
+    }
+
+    /* ══════════════════════════
+   WHY CHOOSE
+══════════════════════════ */
+    .why-section {
+      padding: 7rem 0;
+      background: var(--white);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .why-section::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(212, 175, 55, .07) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .why-img-wrap {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .why-img-wrap img {
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      display: block;
+      transition: transform .6s ease;
+    }
+
+    .why-img-wrap:hover img {
+      transform: scale(1.04);
+    }
+
+    .why-img-wrap::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(10, 10, 10, .4), transparent 60%);
+    }
+
+    /* floating badge on image */
+    .why-float-badge {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 1.5rem;
+      z-index: 2;
+      background: rgba(15, 15, 15, .85);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(212, 175, 55, .25);
+      border-radius: 12px;
+      padding: 1.2rem 1.5rem;
+    }
+
+    .wfb-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2.5rem;
+      color: var(--gold);
+      line-height: 1;
+    }
+
+    .wfb-text {
+      font-family: 'Outfit', sans-serif;
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, .6);
+      margin-top: .15rem;
+    }
+
+    .why-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.8rem;
+      transition: all var(--trans);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .why-card::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--gold), var(--red));
+      opacity: 0;
+      transition: opacity var(--trans);
+    }
+
+    .why-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+      border-color: rgba(212, 175, 55, .25);
+    }
+
+    .why-card:hover::before {
+      opacity: 1;
+    }
+
+    .wc-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 13px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .wc-title {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: .95rem;
+      color: var(--ink);
+      margin-bottom: .5rem;
+    }
+
+    .wc-desc {
+      font-size: .84rem;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+
+    /* ══════════════════════════
+   PROGRAMMES (COURSE CARDS)
+══════════════════════════ */
+    .courses-section {
+      padding: 7rem 0;
+      background: var(--off-white);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .courses-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle at 1px 1px, rgba(0, 0, 0, .035) 1px, transparent 0);
+      background-size: 32px 32px;
+      pointer-events: none;
+    }
+
+    .prog-card {
+      background: var(--white);
+      border-radius: 22px;
+      border: 1px solid var(--border);
+      overflow: hidden;
+      transition: all .45s cubic-bezier(.34, 1.56, .64, 1);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .prog-card:hover {
+      transform: translateY(-12px) rotate(.4deg);
+      box-shadow: 0 32px 64px rgba(0, 0, 0, .14);
+      border-color: rgba(212, 175, 55, .3);
+    }
+
+    .prog-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--gold), var(--red));
+    }
+
+    .pc-img {
+      position: relative;
+      height: 240px;
+      overflow: hidden;
+    }
+
+    .pc-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .65s ease;
+      filter: brightness(.88);
+    }
+
+    .prog-card:hover .pc-img img {
+      transform: scale(1.08);
+      filter: brightness(.72);
+    }
+
+    .pc-img-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(10, 10, 10, .6) 0%, transparent 50%);
+    }
+
+    .pc-badge {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      font-family: 'Outfit', sans-serif;
+      font-size: .62rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      padding: .3rem .85rem;
+      border-radius: 100px;
+    }
+
+    .pc-badge.gold {
+      background: var(--gold);
+      color: var(--ink);
+    }
+
+    .pc-badge.red {
+      background: var(--red);
+      color: #fff;
+    }
+
+    .pc-badge.dark {
+      background: var(--ink);
+      color: var(--gold);
+    }
+
+    .pc-duration-tag {
+      position: absolute;
+      bottom: .9rem;
+      right: .9rem;
+      background: rgba(15, 15, 15, .8);
+      backdrop-filter: blur(8px);
+      color: var(--gold);
+      font-family: 'Outfit', sans-serif;
+      font-size: .65rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      padding: .28rem .8rem;
+      border-radius: 6px;
+      border: 1px solid rgba(212, 175, 55, .25);
+    }
+
+    .pc-body {
+      padding: 2rem 2rem 1.8rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .pc-code {
+      font-family: 'Outfit', sans-serif;
+      font-size: .65rem;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--red);
+      display: flex;
+      align-items: center;
+      gap: .35rem;
+      margin-bottom: .5rem;
+    }
+
+    .pc-code::before {
+      content: '';
+      display: inline-block;
+      width: 14px;
+      height: 2px;
+      background: var(--red);
+    }
+
+    .pc-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.2;
+      margin-bottom: .9rem;
+    }
+
+    .pc-desc {
+      font-size: .87rem;
+      color: var(--muted);
+      line-height: 1.75;
+      flex: 1;
+      margin-bottom: 1.5rem;
+    }
+
+    .pc-meta {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: .5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .pc-meta-item {
+      background: var(--off-white);
+      border-radius: 8px;
+      padding: .65rem .8rem;
+      border: 1px solid var(--border);
+    }
+
+    .pc-meta-lbl {
+      font-family: 'Outfit', sans-serif;
+      font-size: .58rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--muted-2);
+      margin-bottom: .25rem;
+    }
+
+    .pc-meta-val {
+      font-family: 'Outfit', sans-serif;
+      font-size: .82rem;
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    .pc-sw {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .35rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .pc-sw span {
+      font-family: 'Outfit', sans-serif;
+      font-size: .65rem;
+      font-weight: 600;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      background: rgba(212, 175, 55, .1);
+      color: #8a6800;
+      border: 1px solid rgba(212, 175, 55, .25);
+      border-radius: 4px;
+      padding: .22rem .65rem;
+      transition: background var(--trans);
+    }
+
+    .prog-card:hover .pc-sw span {
+      background: rgba(212, 175, 55, .18);
+    }
+
+    .pc-careers {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .35rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .pc-careers span {
+      font-size: .65rem;
+      font-weight: 600;
+      letter-spacing: .04em;
+      background: rgba(210, 35, 42, .07);
+      color: var(--red-dark);
+      border: 1px solid rgba(210, 35, 42, .15);
+      border-radius: 4px;
+      padding: .22rem .65rem;
+    }
+
+    .pc-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--border);
+      gap: .5rem;
+      flex-wrap: wrap;
+    }
+
+    .pc-rating {
+      display: flex;
+      align-items: center;
+      gap: .3rem;
+    }
+
+    .pc-stars {
+      color: var(--gold);
+      font-size: .78rem;
+    }
+
+    .pc-rating-txt {
+      font-size: .73rem;
+      color: var(--muted);
+    }
+
+    /* ══════════════════════════
+   BENEFITS
+══════════════════════════ */
+    .benefits-section {
+      padding: 7rem 0;
+      background: var(--ink);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .benefits-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 20% 50%, rgba(212, 175, 55, .06) 0%, transparent 55%),
+        radial-gradient(ellipse at 80% 30%, rgba(210, 35, 42, .05) 0%, transparent 55%);
+      pointer-events: none;
+    }
+
+    .benefit-card {
+      border: 1px solid rgba(255, 255, 255, .07);
+      border-radius: 18px;
+      padding: 2.2rem 2rem;
+      position: relative;
+      overflow: hidden;
+      transition: all var(--trans);
+      height: 100;
+    }
+
+    .benefit-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--gold), var(--red));
+      opacity: 0;
+      transition: opacity var(--trans);
+    }
+
+    .benefit-card:hover {
+      background: rgba(255, 255, 255, .03);
+      border-color: rgba(212, 175, 55, .2);
+      transform: translateY(-5px);
+    }
+
+    .benefit-card:hover::before {
+      opacity: 1;
+    }
+
+    .bc-step {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 4.5rem;
+      color: rgba(255, 255, 255, .04);
+      position: absolute;
+      top: .2rem;
+      right: 1.2rem;
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .bc-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      margin-bottom: 1.3rem;
+      transition: all var(--trans);
+    }
+
+    .benefit-card:hover .bc-icon {
+      transform: scale(1.1) rotate(-5deg);
+    }
+
+    .bc-title {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      color: #fff;
+      margin-bottom: .6rem;
+    }
+
+    .bc-desc {
+      font-size: .85rem;
+      color: rgba(255, 255, 255, .45);
+      line-height: 1.75;
+    }
+
+    /* ══════════════════════════
+   CAREER PATHS
+══════════════════════════ */
+    .careers-section {
+      padding: 7rem 0;
+      background: var(--white);
+    }
+
+    .career-track {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.4rem;
+      padding: 1.6rem;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      background: var(--white);
+      transition: all var(--trans);
+      height: 100%;
+    }
+
+    .career-track:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+      border-color: rgba(212, 175, 55, .28);
+    }
+
+    .ct-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    .ct-role {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: .92rem;
+      color: var(--ink);
+      margin-bottom: .3rem;
+    }
+
+    .ct-range {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1rem;
+      color: var(--gold);
+      letter-spacing: .06em;
+      margin-bottom: .3rem;
+    }
+
+    .ct-desc {
+      font-size: .8rem;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    /* Salary bar */
+    .sal-bar {
+      height: 6px;
+      background: var(--off-white);
+      border-radius: 100px;
+      overflow: hidden;
+      margin-top: .5rem;
+    }
+
+    .sal-fill {
+      height: 100%;
+      border-radius: 100px;
+      background: linear-gradient(90deg, var(--gold), var(--red));
+      width: 0;
+      transition: width 1.5s cubic-bezier(.23, 1, .32, 1);
+    }
+
+    /* ══════════════════════════
+   PROCESS TIMELINE
+══════════════════════════ */
+    .process-section {
+      padding: 7rem 0;
+      background: var(--off-white);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .process-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle at 1px 1px, rgba(0, 0, 0, .035) 1px, transparent 0);
+      background-size: 32px 32px;
+      pointer-events: none;
+    }
+
+    .timeline-line {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, transparent, var(--border) 10%, var(--border) 90%, transparent);
+      transform: translateX(-50%);
+    }
+
+    .tl-step {
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+      padding: 2rem 0;
+      position: relative;
+    }
+
+    .tl-step.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .tl-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 3.5rem;
+      color: rgba(0, 0, 0, .06);
+      position: absolute;
+      top: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .tl-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      border: 2px solid rgba(212, 175, 55, .35);
+      background: rgba(212, 175, 55, .08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      color: var(--gold);
+      flex-shrink: 0;
+      transition: all var(--trans);
+      z-index: 1;
+    }
+
+    .tl-step:hover .tl-icon {
+      background: var(--gold);
+      color: var(--ink);
+      box-shadow: 0 8px 28px rgba(212, 175, 55, .4);
+    }
+
+    .tl-card {
+      background: var(--white);
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      padding: 1.8rem;
+      flex: 1;
+      box-shadow: var(--shadow-sm);
+      transition: all var(--trans);
+    }
+
+    .tl-step:hover .tl-card {
+      box-shadow: var(--shadow-md);
+      border-color: rgba(212, 175, 55, .25);
+    }
+
+    .tl-card-title {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: .95rem;
+      color: var(--ink);
+      margin-bottom: .5rem;
+    }
+
+    .tl-card-desc {
+      font-size: .84rem;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+
+    /* ══════════════════════════
+   STUDENT WORKS (MASONRY)
+══════════════════════════ */
+    .works-section {
+      padding: 7rem 0;
+      background: var(--ink);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .works-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 0%, rgba(212, 175, 55, .06) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .works-grid {
+      columns: 3;
+      column-gap: 14px;
+    }
+
+    @media(max-width:767px) {
+      .works-grid {
+        columns: 2;
+      }
+    }
+
+    @media(max-width:480px) {
+      .works-grid {
+        columns: 1;
+      }
+    }
+
+    .work-item {
+      break-inside: avoid;
+      margin-bottom: 14px;
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .work-item img {
+      width: 100%;
+      display: block;
+      transition: transform .6s cubic-bezier(.23, 1, .32, 1), filter .4s;
+      filter: brightness(.85) saturate(.9);
+    }
+
+    .work-item:hover img {
+      transform: scale(1.06);
+      filter: brightness(.65) saturate(1.1);
+    }
+
+    .work-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(10, 10, 10, .8) 0%, transparent 55%);
+      opacity: 0;
+      transition: opacity .35s;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 1rem;
+    }
+
+    .work-item:hover .work-overlay {
+      opacity: 1;
+    }
+
+    .work-tag {
+      font-family: 'Outfit', sans-serif;
+      font-size: .62rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .work-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: .82rem;
+      font-weight: 600;
+      color: #fff;
+      margin-top: .15rem;
+    }
+
+    /* ══════════════════════════
+   CTA SECTION
+══════════════════════════ */
+    .cta-section {
+      padding: 6rem 0;
+      background: var(--off-white);
+    }
+
+    .cta-card {
+      background: var(--ink);
+      border-radius: 28px;
+      padding: 5rem 4rem;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .cta-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 25% 50%, rgba(212, 175, 55, .09) 0%, transparent 55%),
+        radial-gradient(ellipse at 75% 50%, rgba(210, 35, 42, .07) 0%, transparent 55%);
+      pointer-events: none;
+    }
+
+    /* pulsing ring on CTA */
+    .cta-ring {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      border: 1px solid rgba(212, 175, 55, .08);
+      pointer-events: none;
+      animation: ringPulse 4s ease-in-out infinite;
+    }
+
+    .cta-ring:nth-child(2) {
+      width: 500px;
+      height: 500px;
+      animation-delay: 1s;
+    }
+
+    .cta-ring:nth-child(3) {
+      width: 700px;
+      height: 700px;
+      animation-delay: 2s;
+    }
+
+    @keyframes ringPulse {
+
+      0%,
+      100% {
+        opacity: .8;
+      }
+
+      50% {
+        opacity: .25;
+      }
+    }
+
+    .cta-tag {
+      display: inline-block;
+      background: rgba(212, 175, 55, .12);
+      border: 1px solid rgba(212, 175, 55, .3);
+      color: var(--gold);
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      padding: .35rem 1.1rem;
+      border-radius: 100px;
+      margin-bottom: 1.5rem;
+    }
+
+    /* ── FORM SECTION ── */
+    .form-section {
+      padding: 3.5rem 0;
+      background: var(--white);
+    }
+
+    .form-card {
+      background: var(--off-white);
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      padding: 2rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    /* Timeline */
+
+    @media(max-width:991px) {
+      .cta-card {
+        padding: 3rem 2rem;
+      }
+
+      .tl-step,
+      .tl-step.reverse {
+        flex-direction: column;
+      }
+
+      .timeline-line {
+        display: none;
+      }
+    }
+
+    @media(max-width:575px) {
+      #topBar {
+        display: none;
+      }
+
+      #mainNav {
+        top: 0 !important;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ════════════════ TOP BAR ════════════════ -->
+  <div id="topbar-placeholder"></div>
+  <div id="navbar-placeholder"></div>
+
+  <section class="hero" id="heroSection">
+    <div class="hero-bg"></div>
+    <div class="hero-mesh"></div>
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+
+    <!-- Decorative rotating wireframe cube -->
+    <div class="cube-deco d-none d-xl-block">
+      <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+      
+      <polygon points="200,30 340,110 340,290 200,370 60,290 60,110" stroke="rgba(212,175,55,0.12)" stroke-width="1" fill="none"/>
+      <polygon points="200,30 340,110 200,190 60,110" stroke="rgba(212,175,55,0.15)" stroke-width="1" fill="none"/>
+      <polygon points="200,190 340,110 340,290 200,370" stroke="rgba(212,175,55,0.1)" stroke-width="1" fill="none"/>
+      <polygon points="200,190 60,110 60,290 200,370" stroke="rgba(212,175,55,0.1)" stroke-width="1" fill="none"/>
+    
+      <polygon points="200,90 280,135 280,225 200,270 120,225 120,135" stroke="rgba(210,35,42,0.2)" stroke-width="1" fill="none"/>
+      <polygon points="200,90 280,135 200,180 120,135" stroke="rgba(210,35,42,0.25)" stroke-width="1" fill="none"/>
+      
+      <line x1="200" y1="30" x2="200" y2="90" stroke="rgba(212,175,55,0.2)" stroke-width="1"/>
+      <line x1="340" y1="110" x2="280" y2="135" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+      <line x1="60"  y1="110" x2="120" y2="135" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+      <line x1="340" y1="290" x2="280" y2="225" stroke="rgba(212,175,55,0.1)" stroke-width="1"/>
+      <line x1="60"  y1="290" x2="120" y2="225" stroke="rgba(212,175,55,0.1)" stroke-width="1"/>
+      <line x1="200" y1="370" x2="200" y2="270" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+      
+      <circle cx="200" cy="30" r="3" fill="rgba(212,175,55,0.5)"/>
+      <circle cx="340" cy="110" r="3" fill="rgba(212,175,55,0.4)"/>
+      <circle cx="340" cy="290" r="3" fill="rgba(212,175,55,0.3)"/>
+      <circle cx="200" cy="370" r="3" fill="rgba(212,175,55,0.4)"/>
+      <circle cx="60"  cy="290" r="3" fill="rgba(212,175,55,0.3)"/>
+      <circle cx="60"  cy="110" r="3" fill="rgba(212,175,55,0.4)"/>
+      <circle cx="200" cy="180" r="5" fill="rgba(210,35,42,0.6)"/>
+    </svg>
+    </div>
+
+    <div class="container-xl position-relative" style="z-index:2;">
+      <div class="row align-items-center" style="padding-top:120px;padding-bottom:80px;">
+        <div class="col-lg-7 col-xl-6 hero-content">
+          <!-- <div class="hero-tag" id="heroTag">
+          <i class="bi bi-cube"></i> MAAC Ghaziabad RDC · Flagship Programme
+        </div> -->
+          <h1 class="hero-title" id="heroTitle">
+            3D <em>Animation</em><br />
+            <span class="line-red">Mastery</span>
+          </h1>
+          <p class="hero-desc" id="heroDesc">
+            Step into the realm of boundless possibilities where imagination meets innovation.
+            Master the complete 3D pipeline — from concept art and character design to
+            cinematic rendering — and build a career that brings worlds to life.
+          </p>
+          <div class="hero-pills" id="heroPills">
+            <div class="h-pill"><i class="bi bi-clock"></i> 12–24 Months</div>
+            <div class="h-pill"><i class="bi bi-patch-check"></i> NSDC Certified</div>
+            <div class="h-pill"><i class="bi bi-people"></i> 3 Specialisations</div>
+            <div class="h-pill"><i class="bi bi-display"></i> RTX Workstations</div>
+            <div class="h-pill"><i class="bi bi-briefcase"></i> 100% Placement Support</div>
+          </div>
+          <div class="d-flex gap-3 flex-wrap" id="heroCtas">
+            <a href="#programmes" class="btn-gold-local"><i class="bi bi-collection"></i> View All Programmes</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- breadcrumb -->
+    <div style="position:absolute;bottom:1rem;left:0;right:0;z-index:3;">
+      <div class="container-xl">
+        <nav
+          style="display:flex;align-items:center;gap:.5rem;font-family:'Outfit',sans-serif;font-size:.7rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;">
+          <a href="index.html" style="color:rgba(255,255,255,.45);text-decoration:none;transition:color .3s;"
+            onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(255,255,255,.45)'">Home</a>
+          <span style="color:rgba(255,255,255,.25);">›</span>
+          <a href="#" style="color:rgba(255,255,255,.45);text-decoration:none;transition:color .3s;"
+            onmouseover="this.style.color='var(--gold)'"
+            onmouseout="this.style.color='rgba(255,255,255,.45)'">Courses</a>
+          <span style="color:rgba(255,255,255,.25);">›</span>
+          <span style="color:var(--gold);">3D Animation</span>
+        </nav>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <div class="sh-line"></div>Scroll
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+     ② STATS BAND
+════════════════════════════════════════════ -->
+  <!-- <div class="stats-band">
+    <div class="container-xl">
+      <div class="row g-0">
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <div class="stat-num" data-target="5000" data-suf="+">0<span class="stat-suf">+</span></div>
+            <div class="stat-lbl">Alumni in 3D</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <div class="stat-num" data-target="24" data-suf=" Mo">0<span class="stat-suf"> Mo</span></div>
+            <div class="stat-lbl">Flagship Duration</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <div class="stat-num" data-target="50" data-suf="+">0<span class="stat-suf">+</span></div>
+            <div class="stat-lbl">Hiring Partners</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <div class="stat-num" data-target="100" data-suf="%">0<span class="stat-suf">%</span></div>
+            <div class="stat-lbl">Placement Support</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- ════════════════════════════════════════════
+     ③ WHY CHOOSE 3D ANIMATION
+════════════════════════════════════════════ -->
+  <section class="why-section" id="whySection">
+    <div class="container-xl">
+      <div class="row g-5 align-items-center">
+
+        <div class="col-lg-5">
+          <div class="why-img-wrap">
+            <img src="/Images/Why-3D-Animation.jpg"
+              alt="Student mastering 3D animation at MAAC Ghaziabad RDC" loading="lazy" />
+            <div class="why-float-badge">
+              <div class="wfb-num">25+</div>
+              <div class="wfb-text">Years Training<br />3D Artists</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <span class="sec-eyebrow">Why 3D Animation?</span>
+          <h2 class="font-display"
+            style="font-size:clamp(2.4rem,5vw,3.8rem);font-weight:600;line-height:1.05;letter-spacing:-.01em;margin-bottom:.6rem;">
+            A Gateway to<br /><span style="color:var(--red);font-style:italic;">Immersive Opportunities</span>
+          </h2>
+          <div class="divider-gold"></div>
+          <p style="font-size:.95rem;color:var(--muted);line-height:1.85;margin-bottom:1.2rem;">
+            Whether you dream of working in films, the advertising industry, or gaming, mastering 3D animation gives you
+            an upper hand in the entertainment industry. The global 3D animation market is projected to reach <strong
+              style="color:var(--ink);">$40+ billion by 2030</strong> — and India is at the heart of this boom.
+          </p>
+          <p style="font-size:.95rem;color:var(--muted);line-height:1.85;margin-bottom:2rem;">
+            At MAAC Ghaziabad RDC Rajnagar, our 3D animation programmes give you the hands-on pipeline training that
+            studios actually hire for — from ZBrush sculpting to Arnold rendering, from character rigging to cinematic
+            lighting.
+          </p>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <div class="why-card">
+                <div class="wc-icon" style="background:rgba(212,175,55,.12);color:var(--gold);"><i
+                    class="bi bi-film"></i></div>
+                <div class="wc-title">Film, OTT & Advertising</div>
+                <div class="wc-desc">From Bollywood blockbusters to Netflix originals — 3D artists are in demand across
+                  every storytelling medium.</div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="why-card">
+                <div class="wc-icon" style="background:rgba(210,35,42,.1);color:var(--red);"><i
+                    class="bi bi-controller"></i></div>
+                <div class="wc-title">Gaming & Real-Time 3D</div>
+                <div class="wc-desc">Game studios, architectural firms, and product companies all need skilled 3D
+                  artists for real-time pipelines.</div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="why-card">
+                <div class="wc-icon" style="background:rgba(52,152,219,.1);color:#3498db;"><i class="bi bi-tools"></i>
+                </div>
+                <div class="wc-title">Master Industry Tools</div>
+                <div class="wc-desc">Get trained on Maya, ZBrush, Houdini, Arnold and more — the exact tools used by
+                  studios like Red Chillies and Technicolor.</div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="why-card">
+                <div class="wc-icon" style="background:rgba(40,167,69,.1);color:#28a745;"><i
+                    class="bi bi-graph-up-arrow"></i></div>
+                <div class="wc-title">High Salary Potential</div>
+                <div class="wc-desc">Entry-level 3D roles in India start at ₹3L–6L. Experienced character artists and
+                  TDs can earn ₹15L+.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+     ④ OUR 4 PROGRAMMES
+════════════════════════════════════════════ -->
+  <section class="courses-section" id="programmes">
+    <div class="container-xl position-relative">
+
+      <div class="text-center mb-5">
+        <span class="sec-eyebrow">Choose Your Path</span>
+        <h2 class="font-display"
+          style="font-size:clamp(2.4rem,5vw,3.8rem);font-weight:600;line-height:1.05;letter-spacing:-.01em;">
+          Our 3D Animation<br /><span style="color:var(--red);font-style:italic;">Programmes</span>
+        </h2>
+        <div class="divider-gold centered"></div>
+        <p style="max-width:520px;margin:0 auto;color:var(--muted);font-size:.92rem;line-height:1.75;">
+          Three programmes — from beginner diploma to the most comprehensive advanced course in the region. All NSDC &
+          MESC certified.
+        </p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+
+        <!-- AD3D Edge Plus -->
+        <div class="col-lg-5">
+          <article class="prog-card" id="ad3d">
+            <div class="pc-img">
+              <img src="/Images/3D_Animation.png" alt="AD3D Edge Plus — Advanced 3D Animation at MAAC Ghaziabad"
+                loading="lazy" />
+              <div class="pc-img-overlay"></div>
+              <span class="pc-badge gold"></span>
+              <div class="pc-duration-tag"><i class="bi bi-clock me-1"></i>602 HRS</div>
+            </div>
+            <div class="pc-body">
+              <div class="pc-code">AD3D Edge Plus – <span style="text-transform: none; font-style: italic;
+           font-weight: 600; color: #1A1A1A;">Powered by CareerX | CreatorX</span> <span style="background: #ffcc00;
+           color: #000; padding: 2px 8px; border-radius: 12px; font-size: 0.6rem; font-weight: 800; margin-left:
+           5px; font-style: normal; text-transform: uppercase;">NEW</span></div>
+              <h2 class="pc-title">Advanced Program in 3D Animation</h2>
+              <p class="pc-desc">The AD3D EDGE Plus course at MAAC trains you in the entire process of animation filmmaking, pre-production, production, and post-production. You will get trained on the latest animation software and become a master at understanding new-age production workflow. Widen the scope of learning and get trained to become a skilled animator ready to rock the world of graphics and motion.</p>
+              <div class="pc-meta">
+                <div class="pc-meta-item">
+                  <div class="pc-meta-lbl"><i class="bi bi-clock me-1"></i>Duration</div>
+                  <div class="pc-meta-val">602 HRS</div>
+                </div>
+                <div class="pc-meta-item">
+                  <div class="pc-meta-lbl"><i class="bi bi-bar-chart-steps me-1"></i>Level</div>
+                  <div class="pc-meta-val">Advanced</div>
+                </div>
+                <div class="pc-meta-item">
+                  <div class="pc-meta-lbl"><i class="bi bi-people me-1"></i>Eligibility</div>
+                  <div class="pc-meta-val">10+2 / Graduate</div>
+                </div>
+                <div class="pc-meta-item">
+                  <div class="pc-meta-lbl"><i class="bi bi-mortarboard me-1"></i>Certification</div>
+                  <div class="pc-meta-val">NSDC + MESC</div>
+                </div>
+              </div>
+              <div class="pc-meta-lbl mb-2"><i class="bi bi-tools me-1"></i>Software Covered</div>
+              <div class="pc-sw">
+                <span>Adobe After Effects</span><span>Adobe Premiere</span><span>Adobe Stager</span>
+                <span>Adobe Audition</span><span>V-Ray</span><span>Adobe Substance 3D Painter</span><span>Marvellous Designer</span>
+                <span>Unreal Engine</span><span>Adobe Sampler</span><span>Storyboader</span><span>ChatGPT</span><span>Deepseek
+</span><span>Leonardo AI</span><span>Midjourney</span><span>Sora</span><span>Runway ML</span><span>ElevenLabs</span><span>Suno AI</span>
+              </div>
+              <div class="pc-meta-lbl mb-2"><i class="bi bi-briefcase me-1"></i>Career Options</div>
+              <div class="pc-careers">
+                <span>3D Animator</span><span>Character Rigger</span><span>Lighting Artist</span>
+                <span>Render TD</span>
+              </div>
+              <div class="pc-footer mt-auto">
+                <div class="pc-rating"><span class="pc-stars">★★★★★</span><span class="pc-rating-txt">4.9 (318
+                    reviews)</span></div>
+                <a href="#enquiryModal" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn-red-local"
+                  style="padding:.6rem 1.2rem;font-size:.72rem;">
+                  Enquire <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- D3D -->
+        <div class="col-lg-5">
+          <article class="prog-card" id="d3d">
+            <div class="pc-img">
+              <img src="/Images/D3D.jpg"
+                alt="D3D — Diploma in 3D Animation at MAAC Ghaziabad" loading="lazy" />
+              <div class="pc-img-overlay"></div>
+              <!-- <span class="pc-badge red">Diploma</span> -->
+              <div class="pc-duration-tag"><i class="bi bi-clock me-1"></i>432 HRS</div>
+            </div>
+            <div class="pc-body">
+              <div class="pc-code">D3D</div>
+              <h2 class="pc-title">Program in 3D Animation Filmmaking</h2>
+              <p class="pc-desc">Ever wondered what goes into creating animated masterpieces like Frozen and Spider-Man: Into the Spider-Verse? From captivating characters to stunning visual effects, every frame blends creativity, technology, and storytelling. MAAC’s 3D Animation Filmmaking course equips students with essential industry skills, covering pre-production, storyboarding, filmmaking, and character animation with hands-on training.</p>
+              <div class="pc-meta">
+                <div class="pc-meta-item">
+                  <div class="pc-meta-lbl"><i class="bi bi-clock me-1"></i>Duration</div>
+                  <div class="pc-meta-val">432 HRS</div>
+                </div>
+                <div class="pc-meta-item">
+                  <div class="pc-meta-lbl"><i class="bi bi-bar-chart-steps me-1"></i>Level</div>
+                  <div class="pc-meta-val">Beginner</div>
+                </div>
+                <div class="pc-meta-item">
+                  <div class="pc-meta-lbl"><i class="bi bi-people me-1"></i>Eligibility</div>
+                  <div class="pc-meta-val">10+2</div>
+                </div>
+                <div class="pc-meta-item">
+                  <div class="pc-meta-lbl"><i class="bi bi-mortarboard me-1"></i>Certification</div>
+                  <div class="pc-meta-val">MESC Certified</div>
+                </div>
+              </div>
+              <div class="pc-meta-lbl mb-2"><i class="bi bi-tools me-1"></i>Software Covered</div>
+              <div class="pc-sw">
+                <span>Adobe After Effects</span><span>Adobe Premiere</span><span>Adobe Audition</span>
+                <span>Autodesk 3ds Max</span><span>Autodesk Maya</span><span>Adobe Substance 3D Painter</span><span>Adobe Photoshop
+</span><span>Foundry Nuke</span><span>Houdini</span><span>Katana</span><span>Storyboarder</span>
+<span>Reality Capture</span><span>Marvellous Designer</span><span>Mocha</span><span>ChatGPT</span><span>Sora</span>
+<span>Firefly</span><span>Comfy UI</span>
+              </div>
+              <div class="pc-meta-lbl mb-2"><i class="bi bi-briefcase me-1"></i>Career Options</div>
+              <div class="pc-careers">
+                <span>3D Modeller</span><span>Texture Artist</span><span>Jr. Animator</span>
+                <span>Storyboard Artist</span>
+              </div>
+              <div class="pc-footer mt-auto">
+                <div class="pc-rating"><span class="pc-stars">★★★★★</span><span class="pc-rating-txt">4.7 (186
+                    reviews)</span></div>
+                <a href="#enquiryModal" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn-red-local"
+                  style="padding:.6rem 1.2rem;font-size:.72rem;">
+                  Enquire <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- DAFM -->
+        <div class="col-lg-5">
+          <article class="prog-card" id="dafm">
+            <div class="pc-img">
+              <img src="./Images/3D_Animation.jpg" alt="DAFM — Diploma in Animation Film Making at MAAC Ghaziabad"
+                loading="lazy" />
+              <div class="pc-img-overlay"></div>
+              <!-- <span class="pc-badge dark">Film Making</span> -->
+              <div class="pc-duration-tag"><i class="bi bi-clock me-1"></i>384 HRS</div>
+            </div>
+            <div class="pc-body">
+              <div class="pc-code">3D & Real-Time Design</div>
+              <h2 class="pc-title">Program in 3D and Real-Time Design</h2>
+              <p class="pc-desc">Step into the world of 3D innovation with MAAC's 3D & Real-Time Design Plus program, designed to equip you with the skills for gaming, VFX, architectural visualization, and interactive media. Covering 3D modeling, CG lighting, digital sculpting, photogrammetry, and real-time workflows, this course blends creative design with technical expertise through hands-on training, industry-leading tools, and expert mentorship.</p>
+              <div class="pc-meta">
+                <div class="pc-meta-item">
+                  <div class="pc-meta-lbl"><i class="bi bi-clock me-1"></i>Duration</div>
+                  <div class="pc-meta-val">384 HRS</div>
+                </div>
+                <div class="pc-meta-item">
+                  <div class="pc-meta-lbl"><i class="bi bi-bar-chart-steps me-1"></i>Level</div>
+                  <div class="pc-meta-val">Beginner - Advanced</div>
+                </div>
+                <div class="pc-meta-item">
+                  <div class="pc-meta-lbl"><i class="bi bi-people me-1"></i>Eligibility</div>
+                  <div class="pc-meta-val">10+2 / Graduate</div>
+                </div>
+                <div class="pc-meta-item">
+                  <div class="pc-meta-lbl"><i class="bi bi-mortarboard me-1"></i>Certification</div>
+                  <div class="pc-meta-val">MESC Certified</div>
+                </div>
+              </div>
+              <div class="pc-meta-lbl mb-2"><i class="bi bi-tools me-1"></i>Software Covered</div>
+              <div class="pc-sw">
+                <span>Adobe Photoshop</span><span>Adobe After Effects</span><span>Adobe Premiere</span>
+                <span>Adobe Audition</span><span>Autodesk 3DS Max</span><span>Autodesk Maya</span><span>Adobe Substance 3D Painter</span>
+              </div>
+              <div class="pc-meta-lbl mb-2"><i class="bi bi-briefcase me-1"></i>Career Options</div>
+              <div class="pc-careers">
+                <span>Animation Director</span><span>Character Designer</span>
+                <span>Story Artist</span><span>Motion Designer</span>
+              </div>
+              <div class="pc-footer mt-auto">
+                <div class="pc-rating"><span class="pc-stars">★★★★★</span><span class="pc-rating-txt">4.8 (142
+                    reviews)</span></div>
+                <a href="#enquiryModal" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn-red-local"
+                  style="padding:.6rem 1.2rem;font-size:.72rem;">
+                  Enquire <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+         <div class="col-lg-5">
+          <article class="prog-card" id="dafm">
+            <div class="pc-img">
+              <img src="./Images/DAFM.jpeg" alt="DAFM — Diploma in Animation Film Making at MAAC Ghaziabad"
+                loading="lazy" />
+              <div class="pc-img-overlay"></div>
+              <!-- <span class="pc-badge dark">Film Making</span> -->
+              <div class="pc-duration-tag"><i class="bi bi-clock me-1"></i>288 HRS</div>
+            </div>
+            <div class="pc-body">
+              <div class="pc-code">DAFM</div>
+              <h2 class="pc-title">Program in Animation Filmmaking</h2>
+              <p class="pc-desc">DAFM is an intensive one-year program that blends animation, cinematography, character design, modeling, texturing, lighting, and 3D animation to shape you into a versatile creative professional. Covering everything from storyboarding to visual effects, this course provides hands-on training in industry-standard tools, equipping you with the skills to craft visually compelling stories where imagination meets technology.</p>
+              <div class="pc-meta">
+                <div class="pc-meta-item">
+                  <div class="pc-meta-lbl"><i class="bi bi-clock me-1"></i>Duration</div>
+                  <div class="pc-meta-val">288 HRS</div>
+                </div>
+                <div class="pc-meta-item">
+                  <div class="pc-meta-lbl"><i class="bi bi-bar-chart-steps me-1"></i>Level</div>
+                  <div class="pc-meta-val">Beginner - Advanced</div>
+                </div>
+                <div class="pc-meta-item">
+                  <div class="pc-meta-lbl"><i class="bi bi-people me-1"></i>Eligibility</div>
+                  <div class="pc-meta-val">10+2 / Graduate</div>
+                </div>
+                <div class="pc-meta-item">
+                  <div class="pc-meta-lbl"><i class="bi bi-mortarboard me-1"></i>Certification</div>
+                  <div class="pc-meta-val">MESC Certified</div>
+                </div>
+              </div>
+              <div class="pc-meta-lbl mb-2"><i class="bi bi-tools me-1"></i>Software Covered</div>
+              <div class="pc-sw">
+                <span>Adobe Photoshop</span><span>Adobe After Effects</span><span>Adobe Premiere</span>
+                <span>Adobe Audition</span><span>Autodesk 3DS Max</span><span>Storyboarder</span>
+                <br><span>V-Ray</span><span>Autodesk Maya</span>
+              </div>
+              <div class="pc-meta-lbl mb-2"><i class="bi bi-briefcase me-1"></i>Career Options</div>
+              <div class="pc-careers">
+                <span>Animation Director</span><span>Character Designer</span>
+                <span>Story Artist</span><span>Motion Designer</span>
+              </div>
+              <div class="pc-footer mt-auto">
+                <div class="pc-rating"><span class="pc-stars">★★★★★</span><span class="pc-rating-txt">4.8 (142
+                    reviews)</span></div>
+                <a href="#enquiryModal" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn-red-local"
+                  style="padding:.6rem 1.2rem;font-size:.72rem;">
+                  Enquire <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+     ⑤ BENEFITS
+════════════════════════════════════════════ -->
+  <section class="benefits-section">
+    <div class="container-xl">
+      <div class="text-center mb-5">
+        <span class="sec-eyebrow" style="color:var(--gold);">The MAAC Difference</span>
+        <h2 class="font-display text-white"
+          style="font-size:clamp(2.4rem,5vw,3.8rem);font-weight:600;line-height:1.05;letter-spacing:-.01em;margin-bottom:.6rem;">
+          Benefits to Enhance<br /><span style="color:var(--gold-light);font-style:italic;">Your Learning</span>
+        </h2>
+        <div class="divider-gold centered"></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-3">
+          <div class="benefit-card">
+            <div class="bc-step">01</div>
+            <div class="bc-icon" style="background:rgba(212,175,55,.12);color:var(--gold);"><i
+                class="bi bi-people-fill"></i></div>
+            <div class="bc-title">Networking Opportunities</div>
+            <div class="bc-desc">Join a thriving community of artists, alumni, and industry mentors. Build professional
+              connections that can fast-track your career growth beyond graduation.</div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="benefit-card">
+            <div class="bc-step">02</div>
+            <div class="bc-icon" style="background:rgba(210,35,42,.1);color:var(--red);"><i
+                class="bi bi-display-fill"></i></div>
+            <div class="bc-title">Access to Premium Resources</div>
+            <div class="bc-desc">As a MAAC student you get access to premium software licenses, in-house texture
+              libraries, render farms, and digital tools that studios actually use every day.</div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="benefit-card">
+            <div class="bc-step">03</div>
+            <div class="bc-icon" style="background:rgba(52,152,219,.1);color:#3498db;"><i class="bi bi-laptop-fill"></i>
+            </div>
+            <div class="bc-title">Hands-on Experience</div>
+            <div class="bc-desc">With industry veterans next to you, you'll actively work on live animation projects
+              from day one. Their feedback, insights, and critique are invaluable to your growth.</div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="benefit-card">
+            <div class="bc-step">04</div>
+            <div class="bc-icon" style="background:rgba(40,167,69,.1);color:#28a745;"><i
+                class="bi bi-briefcase-fill"></i></div>
+            <div class="bc-title">Placement Cell Support</div>
+            <div class="bc-desc">Our dedicated placement cell handles portfolio reviews, mock interviews, and direct
+              studio referrals — giving you every advantage in landing your first professional role.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+     ⑥ CAREER PATHS
+════════════════════════════════════════════ -->
+  <section class="careers-section" id="careerSection">
+    <div class="container-xl">
+      <div class="row g-5 align-items-end mb-5">
+        <div class="col-lg-6">
+          <span class="sec-eyebrow">Career Outcomes</span>
+          <h2 class="font-display"
+            style="font-size:clamp(2.4rem,5vw,3.8rem);font-weight:600;line-height:1.05;letter-spacing:-.01em;">
+            A Career in<br /><span style="color:var(--red);font-style:italic;">3D Animation</span>
+          </h2>
+          <div class="divider-gold"></div>
+          <p style="font-size:.93rem;color:var(--muted);line-height:1.85;max-width:480px;">
+            The world of 3D animation abounds in immense scope given the surge in demand across film, gaming,
+            advertising, and digital promotions. From VFX-heavy films to short-form content, 3D animation artists play a
+            crucial role in shaping what audiences see on every screen.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <div style="background:var(--off-white);border-radius:16px;padding:2rem;border:1px solid var(--border);">
+            <div
+              style="font-family:'Outfit',sans-serif;font-size:.68rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--muted-2);margin-bottom:1.2rem;">
+              Indicative Salary Ranges (India)</div>
+            <div id="salaryBars">
+              <div style="margin-bottom:1rem;">
+                <div style="display:flex;justify-content:space-between;margin-bottom:.35rem;"><span
+                    style="font-size:.84rem;font-weight:600;color:var(--ink);">3D Animator (Jr.)</span><span
+                    style="font-family:'Bebas Neue';font-size:1rem;color:var(--gold);">₹2.8L–5L/yr</span></div>
+                <div class="sal-bar">
+                  <div class="sal-fill" data-w="68%"></div>
+                </div>
+              </div>
+              <div style="margin-bottom:1rem;">
+                <div style="display:flex;justify-content:space-between;margin-bottom:.35rem;"><span
+                    style="font-size:.84rem;font-weight:600;color:var(--ink);">Character Rigger</span><span
+                    style="font-family:'Bebas Neue';font-size:1rem;color:var(--gold);">₹3.5L–7L/yr</span></div>
+                <div class="sal-bar">
+                  <div class="sal-fill" data-w="80%"></div>
+                </div>
+              </div>
+              <div style="margin-bottom:1rem;">
+                <div style="display:flex;justify-content:space-between;margin-bottom:.35rem;"><span
+                    style="font-size:.84rem;font-weight:600;color:var(--ink);">3D Modeller</span><span
+                    style="font-family:'Bebas Neue';font-size:1rem;color:var(--gold);">₹2.5L–5L/yr</span></div>
+                <div class="sal-bar">
+                  <div class="sal-fill" data-w="64%"></div>
+                </div>
+              </div>
+              <div style="margin-bottom:1rem;">
+                <div style="display:flex;justify-content:space-between;margin-bottom:.35rem;"><span
+                    style="font-size:.84rem;font-weight:600;color:var(--ink);">Lighting Artist</span><span
+                    style="font-family:'Bebas Neue';font-size:1rem;color:var(--gold);">₹3.5L–6.5L/yr</span></div>
+                <div class="sal-bar">
+                  <div class="sal-fill" data-w="76%"></div>
+                </div>
+              </div>
+              <div>
+                <div style="display:flex;justify-content:space-between;margin-bottom:.35rem;"><span
+                    style="font-size:.84rem;font-weight:600;color:var(--ink);">Animation Director</span><span
+                    style="font-family:'Bebas Neue';font-size:1rem;color:var(--gold);">₹8L–20L/yr</span></div>
+                <div class="sal-bar">
+                  <div class="sal-fill" data-w="92%"></div>
+                </div>
+              </div>
+            </div>
+            <p style="font-size:.68rem;color:var(--muted-2);margin-top:.8rem;">* Entry-level indicative ranges. Actual
+              compensation varies by city and portfolio.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row g-3">
+        <div class="col-sm-6 col-lg-3">
+          <div class="career-track">
+            <div class="ct-icon" style="background:rgba(212,175,55,.12);color:var(--gold);"><i
+                class="bi bi-person-walking"></i></div>
+            <div>
+              <div class="ct-role">3D Modeller</div>
+              <div class="ct-range">₹2.5L–5L/yr</div>
+              <div class="ct-desc">Creating 3D models of props and characters used in animation, gaming, and advertising
+                projects.</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="career-track">
+            <div class="ct-icon" style="background:rgba(210,35,42,.1);color:var(--red);"><i class="bi bi-stars"></i>
+            </div>
+            <div>
+              <div class="ct-role">VFX Artist</div>
+              <div class="ct-range">₹3L–6L/yr</div>
+              <div class="ct-desc">Creating 3D-based visual effects for films, commercials, serials, and digital media.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="career-track">
+            <div class="ct-icon" style="background:rgba(155,89,182,.1);color:#9b59b6;"><i class="bi bi-controller"></i>
+            </div>
+            <div>
+              <div class="ct-role">Game Animator</div>
+              <div class="ct-range">₹3.5L–6.5L/yr</div>
+              <div class="ct-desc">Collaborating with game designers to create character animations and breathe life
+                into game worlds.</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="career-track">
+            <div class="ct-icon" style="background:rgba(52,152,219,.1);color:#3498db;"><i
+                class="bi bi-camera-reels"></i></div>
+            <div>
+              <div class="ct-role">Animation Director</div>
+              <div class="ct-range">₹8L–20L+/yr</div>
+              <div class="ct-desc">Leading animation teams on production, directing performances, and overseeing the
+                creative pipeline.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+     ⑦ PROCESS TIMELINE
+════════════════════════════════════════════ -->
+  <section class="process-section">
+    <div class="container-xl position-relative">
+      <div class="timeline-line d-none d-lg-block"></div>
+      <div class="text-center mb-5">
+        <span class="sec-eyebrow">Learning Journey</span>
+        <h2 class="font-display"
+          style="font-size:clamp(2rem,4vw,3rem);font-weight:600;line-height:1.05;letter-spacing:-.01em;">
+          From Beginner to<br /><span style="color:var(--red);font-style:italic;">Studio-Ready Artist</span>
+        </h2>
+        <div class="divider-gold centered"></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <div class="tl-step">
+            <div class="tl-icon"><i class="bi bi-brush"></i></div>
+            <div class="tl-card">
+              <div class="tl-card-title"><span
+                  style="color:var(--gold);font-family:'Bebas Neue';font-size:.9rem;letter-spacing:.1em;">Phase 01 —
+                </span>Art Fundamentals</div>
+              <div class="tl-card-desc">Drawing principles, perspective, character design, storyboarding, and the
+                language of animation. We build your artistic foundation before touching software.</div>
+            </div>
+          </div>
+          <div class="tl-step" style="margin-top:1.5rem;">
+            <div class="tl-icon"><i class="bi bi-box"></i></div>
+            <div class="tl-card">
+              <div class="tl-card-title"><span
+                  style="color:var(--gold);font-family:'Bebas Neue';font-size:.9rem;letter-spacing:.1em;">Phase 02 —
+                </span>3D Modelling & Sculpting</div>
+              <div class="tl-card-desc">Polygon modelling, sub-division surfaces, UV unwrapping, ZBrush sculpting,
+                retopology, and texture baking with Substance Painter.</div>
+            </div>
+          </div>
+          <div class="tl-step" style="margin-top:1.5rem;">
+            <div class="tl-icon"><i class="bi bi-person-badge"></i></div>
+            <div class="tl-card">
+              <div class="tl-card-title"><span
+                  style="color:var(--gold);font-family:'Bebas Neue';font-size:.9rem;letter-spacing:.1em;">Phase 03 —
+                </span>Rigging & Animation</div>
+              <div class="tl-card-desc">Skeleton setup, IK/FK systems, facial rigging, weight painting, animation
+                principles — walk cycles, acting, lip sync, and performance animation.</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 offset-lg-2">
+          <div style="margin-top:4rem;">
+            <div class="tl-step">
+              <div class="tl-icon"><i class="bi bi-tornado"></i></div>
+              <div class="tl-card">
+                <div class="tl-card-title"><span
+                    style="color:var(--gold);font-family:'Bebas Neue';font-size:.9rem;letter-spacing:.1em;">Phase 04 —
+                  </span>Simulation & FX</div>
+                <div class="tl-card-desc">Cloth, hair, rigid body, fluid simulations, and Houdini particle systems.
+                  Create destruction, explosions, and natural FX with industry-grade tools.</div>
+              </div>
+            </div>
+            <div class="tl-step" style="margin-top:1.5rem;">
+              <div class="tl-icon"><i class="bi bi-sun"></i></div>
+              <div class="tl-card">
+                <div class="tl-card-title"><span
+                    style="color:var(--gold);font-family:'Bebas Neue';font-size:.9rem;letter-spacing:.1em;">Phase 05 —
+                  </span>Lighting & Rendering</div>
+                <div class="tl-card-desc">Physically-based lighting, HDRI setups, Arnold GPU rendering, multi-pass AOVs,
+                  and colour management in ACES for film-quality output.</div>
+              </div>
+            </div>
+            <div class="tl-step" style="margin-top:1.5rem;">
+              <div class="tl-icon"><i class="bi bi-collection-play"></i></div>
+              <div class="tl-card">
+                <div class="tl-card-title"><span
+                    style="color:var(--gold);font-family:'Bebas Neue';font-size:.9rem;letter-spacing:.1em;">Phase 06 —
+                  </span>Showreel & Placement</div>
+                <div class="tl-card-desc">Final film project, character animation reel, portfolio review, mock studio
+                  interviews, and direct access to our placement drives with 50+ hiring partners.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+     ⑧ STUDENT WORKS
+════════════════════════════════════════════ -->
+  <section class="works-section" id="studentWorks">
+    <div class="container-xl position-relative">
+      <div class="text-center mb-5">
+        <span class="sec-eyebrow" style="color:var(--gold);">Student Portfolio</span>
+        <h2 class="font-display text-white"
+          style="font-size:clamp(2.4rem,5vw,3.8rem);font-weight:600;line-height:1.05;letter-spacing:-.01em;margin-bottom:.6rem;">
+          Our Students'<br /><span style="color:var(--gold-light);font-style:italic;">Creative Excellence</span>
+        </h2>
+        <div class="divider-gold centered"></div>
+        <p style="max-width:480px;margin:0 auto;color:rgba(255,255,255,.5);font-size:.9rem;line-height:1.75;">
+          At MAAC Ghaziabad RDC Rajnagar we place great emphasis on self-paced, project-based learning. Here's a glimpse
+          of what our students achieve.
+        </p>
+      </div>
+      <div class="works-grid">
+        <div class="work-item">
+          <img src="/Images/Gallery-01.png"
+            alt="ZBrush character sculpt by MAAC student" loading="lazy" />
+          <div class="work-overlay">
+            <div class="work-tag">Character Design</div>
+            <div class="work-title">ZBrush Character Sculpt</div>
+          </div>
+        </div>
+        <div class="work-item">
+          <img src="/Images/Graphic-&-Digital-Media.png"
+            alt="3D environment render by MAAC student" loading="lazy" />
+          <div class="work-overlay">
+            <div class="work-tag">Environment Art</div>
+            <div class="work-title">Cinematic Environment Render</div>
+          </div>
+        </div>
+        <div class="work-item">
+          <img src="/Images/Blog-Game-Design.png"
+            alt="3D animation frame from MAAC student project" loading="lazy" />
+          <div class="work-overlay">
+            <div class="work-tag">3D Animation</div>
+            <div class="work-title">Character Animation Reel</div>
+          </div>
+        </div>
+        <div class="work-item">
+          <img src="/Images/VFX-Film.png" alt="Lighting and rendering work by MAAC student" loading="lazy" />
+          <div class="work-overlay">
+            <div class="work-tag">Lighting & Rendering</div>
+            <div class="work-title">Arnold GPU Render Study</div>
+          </div>
+        </div>
+        <div class="work-item">
+          <img src="/Images/Gallery-02.png"
+            alt="Architectural visualisation by MAAC 3D student" loading="lazy" />
+          <div class="work-overlay">
+            <div class="work-tag">Arch-Viz</div>
+            <div class="work-title">Architectural Visualisation</div>
+          </div>
+        </div>
+        <div class="work-item">
+          <img src="/Images/VFX.png"
+            alt="Houdini FX simulation by MAAC VFX student" loading="lazy" />
+          <div class="work-overlay">
+            <div class="work-tag">Simulation FX</div>
+            <div class="work-title">Houdini Destruction FX</div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <a href="gallery.html" class="btn-gold-local"><i class="bi bi-images"></i> Explore Full Student Gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+     ⑨ CTA
+════════════════════════════════════════════ -->
+  <section class="cta-section">
+    <div class="container-xl">
+      <div class="cta-card">
+        <div class="cta-ring"></div>
+        <div class="cta-ring"></div>
+        <div class="cta-ring"></div>
+        <div class="position-relative">
+          <span class="cta-tag"><i class="bi bi-cube me-1"></i> 3D Animation · Admissions Open 2025</span>
+          <h2 class="font-display text-white"
+            style="font-size:clamp(2.2rem,5vw,4rem);font-weight:700;line-height:1.05;margin-bottom:1.2rem;">
+            Join the Best 3D Animation<br /><em style="color:var(--gold-light);">Institute in Ghaziabad</em>
+          </h2>
+          <p style="font-size:.95rem;color:rgba(255,255,255,.6);max-width:480px;margin:0 auto 2.2rem;line-height:1.8;">
+            Ready to take your passion for 3D animation to a higher level? Benefit from industry veterans, expert
+            instructors, and cutting-edge software. Enrol now and bring your imagination to life.
+          </p>
+          <div class="d-flex gap-3 justify-content-center flex-wrap">
+            <a href="#enquiryModal" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn-gold-local"
+              style="padding:1rem 2.4rem;">
+              <i class="bi bi-send-fill"></i> Book Free Demo Class
+            </a>
+            <!-- <a href="courses.html" class="btn-outline" style="padding:1rem 2.4rem;">
+            <i class="bi bi-collection"></i> All Courses
+          </a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+     ⑩ QUICK ENQUIRY FORM
+════════════════════════════════════════════ -->
+  <section class="form-section" id="formSection">
+    <div class="container-xl">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-5">
+          <span class="sec-eyebrow">Send a Query</span>
+          <h2 class="font-display"
+            style="font-size:clamp(2.2rem,4vw,3.2rem);font-weight:600;line-height:1.05;letter-spacing:-.01em;margin-bottom:.8rem;">
+            Have Questions?<br /><span style="color:var(--red);font-style:italic;">We'll Answer</span>
+          </h2>
+          <div class="divider-gold"></div>
+          <p style="font-size:.93rem;color:var(--muted);line-height:1.82;margin-bottom:1.5rem;">
+            Drop your details and a counsellor will call you within 24 hours. Whether it's about course selection, fee
+            structure, batch timings, or scholarship availability — we're here to help.
+          </p>
+          <div style="display:flex;flex-direction:column;gap:1rem;">
+            <div style="display:flex;align-items:center;gap:.9rem;">
+              <div
+                style="width:44px;height:44px;background:rgba(212,175,55,.12);border:1px solid rgba(212,175,55,.25);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1rem;color:var(--gold);flex-shrink:0;">
+                <i class="bi bi-telephone-fill"></i></div>
+              <div>
+                <div
+                  style="font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-2);">
+                  Call Us</div><a href="tel:+917840002724"
+                  style="font-size:.92rem;font-weight:600;color:var(--ink);text-decoration:none;">+91 784 000 2724 /
+                  2725</a>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:.9rem;">
+              <div
+                style="width:44px;height:44px;background:rgba(37,211,102,.1);border:1px solid rgba(37,211,102,.25);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1rem;color:#25D366;flex-shrink:0;">
+                <i class="bi bi-whatsapp"></i></div>
+              <div>
+                <div
+                  style="font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-2);">
+                  WhatsApp</div><a href="https://wa.me/917840002725" target="_blank"
+                  style="font-size:.92rem;font-weight:600;color:var(--ink);text-decoration:none;">Chat Instantly</a>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:.9rem;">
+              <div
+                style="width:44px;height:44px;background:rgba(52,152,219,.1);border:1px solid rgba(52,152,219,.25);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1rem;color:#3498db;flex-shrink:0;">
+                <i class="bi bi-envelope-fill"></i></div>
+              <div>
+                <div
+                  style="font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-2);">
+                  Email Us</div><a href="mailto:maacrdcghaziabad@gmail.com"
+                  style="font-size:.92rem;font-weight:600;color:var(--ink);text-decoration:none;">maacrdcghaziabad@gmail.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="form-card">
+            <form id="quickForm" action="https://formsubmit.co/ajax/maacrdcghaziabad@gmail.com" method="POST" novalidate>
+              <div class="row g-3">
+                <div class="col-sm-6"><label class="form-label-custom" for="qfName">Your Name *</label><input
+                    type="text" id="qfName" class="form-control-custom" placeholder="Your Name" required
+                    autocomplete="name" /></div>
+                <div class="col-sm-6"><label class="form-label-custom" for="qfPhone">Phone Number *</label><input
+                    type="tel" id="qfPhone" class="form-control-custom" placeholder="Phone Number" required
+                    autocomplete="tel" /></div>
+                <div class="col-12">
+                  <label class="form-label-custom" for="qfEmail">Email Address</label><input type="email" id="qfEmail"
+                    class="form-control-custom" placeholder="Mail" autocomplete="email" />
+                </div>
+                <div class="col-12">
+                  <label class="form-label-custom" for="qfCourse">Programme of Interest *</label>
+                  <select id="qfCourse" class="form-control-custom" required>
+                    <option value="">Select programme…</option>
+                    <option value="ad3d">AD3D Edge Plus (24 Months)</option>
+                    <option value="d3d">D3D — Diploma (12 Months)</option>
+                    <option value="dafm">DAFM — Film Making (18 Months)</option>
+                    <option value="other">Other / Not Sure</option>
+                  </select>
+                </div>
+                <div class="col-12"><label class="form-label-custom" for="qfMsg">Message</label><textarea id="qfMsg"
+                    class="form-control-custom" rows="3"
+                    placeholder="Tell us your background and what you'd like to achieve…"
+                    style="resize:none;"></textarea></div>
+                <div class="col-12">
+                  <button type="submit" class="btn-red w-100 justify-content-center"
+                    style="padding:1.1rem;font-size:.88rem;">
+                    <i class="bi bi-send-fill"></i> Send Enquiry — We'll Call Back within 24 Hours
+                  </button>
+                  <div style="font-size:.72rem;color:var(--muted-2);text-align:center;margin-top:.6rem;">No spam. 100%
+                    confidential. Callback guaranteed.</div>
+                </div>
+              </div>
+            </form>
+            <div id="formSuccess" style="display:none;text-align:center;padding:3rem 1rem;">
+              <i class="bi bi-check-circle-fill"
+                style="font-size:3.5rem;color:var(--gold);display:block;margin-bottom:1rem;animation:popIn .5s cubic-bezier(.34,1.56,.64,1);"></i>
+              <h3 class="font-display" style="font-size:2rem;font-weight:700;margin-bottom:.5rem;">Enquiry Received!
+              </h3>
+              <p style="color:var(--muted);font-size:.9rem;">Our counsellor will call you within 24 hours.<br />Check
+                your email for a confirmation.</p>
+              <a href="courses.html" class="btn-gold-local" style="margin-top:1.5rem;"><i class="bi bi-collection"></i>
+                Browse All Courses</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+  <div id="footer-placeholder"></div>
+
+  <style>
+    @keyframes popIn {
+      from {
+        transform: scale(0)
+      }
+
+      to {
+        transform: scale(1)
+      }
+    }
+  </style>
+
+  <!-- ════════════ SCRIPTS ════════════ -->
+  <script src="component.js"></script>
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    /* ── HERO ANIMATIONS (GSAP) ── */
+    const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+    tl.to('#heroTag', { opacity: 1, y: 0, duration: .7, delay: .2, from: { opacity: 0, y: 24 } })
+      .from('#heroTitle', { opacity: 0, y: 60, duration: 1, stagger: .15 }, '-=.3')
+      .from('#heroDesc', { opacity: 0, y: 30, duration: .8 }, '-=.5')
+      .from('#heroPills .h-pill', { opacity: 0, y: 20, duration: .5, stagger: .1 }, '-=.5')
+      .from('#heroCtas a', { opacity: 0, y: 20, duration: .5, stagger: .12 }, '-=.3');
+
+    /* ── STATS COUNTER ── */
+    function animCount(el, target) {
+      const numEl = el.querySelector('.stat-num');
+      const sufEl = numEl.querySelector('.stat-suf');
+      if (!numEl || !sufEl) return;
+      let start = 0;
+      const dur = 1800, t0 = performance.now();
+      (function tick(now) {
+        const p = Math.min((now - t0) / dur, 1);
+        const v = Math.round((1 - Math.pow(1 - p, 4)) * target);
+        numEl.childNodes[0].textContent = v.toLocaleString('en-IN');
+        if (p < 1) requestAnimationFrame(tick);
+      })(t0);
+    }
+    let statsDone = false;
+    ScrollTrigger.create({
+      trigger: '.stats-band', start: 'top 80%', once: true,
+      onEnter: () => {
+        if (statsDone) return; statsDone = true;
+        document.querySelectorAll('[data-target]').forEach(el =>
+          animCount(el.closest('.stat-item'), +el.dataset.target));
+      }
+    });
+
+    /* ── SALARY BARS ── */
+    let barsDone = false;
+    ScrollTrigger.create({
+      trigger: '#salaryBars', start: 'top 75%', once: true,
+      onEnter: () => {
+        if (barsDone) return; barsDone = true;
+        document.querySelectorAll('.sal-fill').forEach((b, i) => {
+          setTimeout(() => gsap.to(b, { width: b.dataset.w, duration: 1.4, ease: 'power3.out' }), i * 100);
+        });
+      }
+    });
+
+    /* ── SCROLL REVEAL (GSAP ScrollTrigger) ── */
+    gsap.utils.toArray('.prog-card').forEach((el, i) => {
+      gsap.from(el, {
+        opacity: 0, y: 60, duration: .9, delay: i * .12, ease: 'power3.out',
+        scrollTrigger: { trigger: el, start: 'top 88%', once: true }
+      });
+    });
+    gsap.utils.toArray('.why-card, .benefit-card, .career-track, .tl-card').forEach(el => {
+      gsap.from(el, {
+        opacity: 0, y: 40, duration: .7, ease: 'power3.out',
+        scrollTrigger: { trigger: el, start: 'top 90%', once: true }
+      });
+    });
+    gsap.utils.toArray('.work-item').forEach((el, i) => {
+      gsap.from(el, {
+        opacity: 0, scale: .92, duration: .6, delay: i * .06, ease: 'power2.out',
+        scrollTrigger: { trigger: el, start: 'top 92%', once: true }
+      });
+    });
+
+    /* Image parallax on hero */
+    gsap.to('.hero-glow-1', {
+      y: -80, ease: 'none',
+      scrollTrigger: { trigger: '#heroSection', start: 'top top', end: 'bottom top', scrub: 1 }
+    });
+    gsap.to('.hero-glow-2', {
+      y: 80, ease: 'none',
+      scrollTrigger: { trigger: '#heroSection', start: 'top top', end: 'bottom top', scrub: 1.5 }
+    });
+
+    /* ── SECTION TITLE REVEALS ── */
+    gsap.utils.toArray('h2.font-display').forEach(el => {
+      gsap.from(el, {
+        opacity: 0, y: 40, duration: .9, ease: 'power3.out',
+        scrollTrigger: { trigger: el, start: 'top 88%', once: true }
+      });
+    });
+
+    /* ── FORMS ── */
+    document.getElementById('quickForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      let ok = true;
+      this.querySelectorAll('[required]').forEach(f => {
+        if (!f.value.trim()) { f.style.borderColor = 'var(--red)'; ok = false; setTimeout(() => f.style.borderColor = '', 2500); }
+      });
+      if (!ok) return;
+      this.style.opacity = '.4'; this.style.pointerEvents = 'none';
+      
+      fetch(this.action, {
+        method: this.method,
+        body: new FormData(this),
+        headers: { 'Accept': 'application/json' }
+      }).then(response => {
+        this.style.display = 'none'; document.getElementById('formSuccess').style.display = 'block'; 
+      }).catch(err => {
+        alert('Oops! There was a problem submitting your form. Please try again or call us.');
+        this.style.opacity = '1'; this.style.pointerEvents = 'auto';
+      });
+    });
+
+    /* Smooth anchor */
+    document.addEventListener('click', e => {
+      const a = e.target.closest('a[href^="#"]');
+      if (!a || a.getAttribute('href').includes('enquiry') || a.getAttribute('href').includes('Modal')) return;
+      const t = document.querySelector(a.getAttribute('href'));
+      if (t) { e.preventDefault(); window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - 100, behavior: 'smooth' }); }
+    });
+  </script>
+</body>
+
+</html>

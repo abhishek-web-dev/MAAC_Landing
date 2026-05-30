@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Digital Content Creation Courses in Ghaziabad | MAAC RDC</title>
+  <link rel="icon" href="Images/favicon.png" type="image/png"/>
+  <meta name="description"
+    content="Digital Content Creation courses at MAAC Ghaziabad RDC covering branding, social media design, print, digital content, portfolio development and career-focused creative training." />
+  <meta name="keywords"
+    content="Digital Content Creation Ghaziabad, APDMD, APDMC, Photoshop, Illustrator, InDesign, MAAC Ghaziabad" />
+  <meta name="author" content="MAAC Ghaziabad RDC" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://maacghaziabad.in/digital-content-creation.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Bebas+Neue&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { corePlugins: { preflight: false } };</script>
+  <style>
+    :root {
+      --red: #D2232A;
+      --red-dark: #A51B21;
+      --gold: #D4AF37;
+      --gold-light: #F0D060;
+      --white: #fff;
+      --pale: #F2F0EA;
+      --ink: #0F0F0F;
+      --muted: #6B7280;
+      --border: rgba(0, 0, 0, .08);
+      --glass: rgba(255, 255, 255, .78);
+      --shadow: 0 24px 70px rgba(0, 0, 0, .16);
+      --trans: .38s cubic-bezier(.4, 0, .2, 1)
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Outfit', sans-serif;
+      color: var(--ink);
+      background: radial-gradient(circle at 8% 0, rgba(212, 175, 55, .18), transparent 22%), radial-gradient(circle at 90% 18%, rgba(210, 35, 42, .13), transparent 18%), linear-gradient(180deg, #fff, #fbfaf7 42%, #fff);
+      overflow-x: hidden
+    }
+
+    .font-display {
+      font-family: 'Cormorant Garamond', serif
+    }
+
+    .section-space {
+      padding: 6rem 0
+    }
+
+    .section-space-lg {
+      padding: 7.5rem 0
+    }
+
+    .sec-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      text-transform: uppercase;
+      letter-spacing: .22em;
+      font-size: .72rem;
+      font-weight: 700;
+      color: var(--gold)
+    }
+
+    .sec-eyebrow:before {
+      content: "";
+      width: 28px;
+      height: 2px;
+      background: linear-gradient(90deg, var(--gold), var(--red));
+      display: inline-block
+    }
+
+    .sec-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.4rem, 5vw, 4.6rem);
+      line-height: .95;
+      letter-spacing: -.03em;
+      font-weight: 700
+    }
+
+    .sec-copy {
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.8
+    }
+
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      color: #fff;
+      background: linear-gradient(135deg, rgba(8, 8, 8, .9), rgba(8, 8, 8, .5)), url('/Images/Graphic-Desgin-Banner.png') center/cover no-repeat
+    }
+
+    .hero:before,
+    .hero:after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none
+    }
+
+    .hero:before {
+      width: 320px;
+      height: 320px;
+      background: radial-gradient(circle, rgba(212, 175, 55, .28), transparent 70%);
+      top: 12%;
+      left: -4%;
+      animation: drift 8s ease-in-out infinite
+    }
+
+    .hero:after {
+      width: 420px;
+      height: 420px;
+      background: radial-gradient(circle, rgba(210, 35, 42, .22), transparent 70%);
+      right: -8%;
+      bottom: 8%;
+      animation: drift 10s ease-in-out infinite reverse
+    }
+
+    @keyframes drift {
+
+      0%,
+      100% {
+        transform: translate(0, 0)
+      }
+
+      50% {
+        transform: translate(12px, 20px)
+      }
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      padding-top: calc(var(--header-height, 120px) + 2rem);
+      padding-bottom: 4rem
+    }
+    @media (max-height: 580px) {
+        .hero-title { font-size: 3.5rem; }
+        .hero-copy { display: -webkit-box; --webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-top: 1rem; }
+    }
+
+    .breadcrumb-custom {
+      display: flex;
+      gap: .55rem;
+      align-items: center;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      font-size: .72rem;
+      font-weight: 600
+    }
+
+    .breadcrumb-custom a {
+      color: rgba(255, 255, 255, .62);
+      text-decoration: none
+    }
+
+    .breadcrumb-custom .current {
+      color: var(--gold-light)
+    }
+
+    .hero-title {
+      max-width: 760px;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.4rem, 6vw, 6rem);
+      line-height: 1.1;
+      letter-spacing: -.02em;
+      margin: 0
+    }
+
+    .hero-title .accent {
+      color: var(--gold-light);
+      font-style: italic
+    }
+
+    .hero-copy {
+      max-width: 620px;
+      margin-top: 1.4rem;
+      color: rgba(255, 255, 255, .82);
+      line-height: 1.8
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 2rem
+    }
+
+    .btn-red-local,
+    .btn-gold-local,
+    .btn-outline-light {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .55rem;
+      border-radius: 999px;
+      padding: .95rem 1.6rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      font-size: .78rem;
+      font-weight: 700;
+      transition: transform var(--trans), background var(--trans), color var(--trans), box-shadow var(--trans)
+    }
+
+    .btn-red-local {
+      background: var(--red);
+      color: #fff;
+      box-shadow: 0 16px 34px rgba(210, 35, 42, .28)
+    }
+
+    .btn-red-local:hover {
+      background: var(--red-dark);
+      color: #fff;
+      transform: translateY(-3px)
+    }
+
+    .btn-gold-local {
+      background: var(--gold);
+      color: var(--ink);
+      box-shadow: 0 16px 34px rgba(212, 175, 55, .25)
+    }
+
+    .btn-gold-local:hover {
+      background: var(--gold-light);
+      color: var(--ink);
+      transform: translateY(-3px)
+    }
+
+    .btn-outline-light {
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, .28);
+      background: rgba(255, 255, 255, .08);
+      backdrop-filter: blur(10px)
+    }
+
+    .btn-outline-light:hover {
+      color: #fff;
+      background: rgba(255, 255, 255, .14);
+      transform: translateY(-3px)
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+      margin-top: 2.3rem;
+      max-width: 720px
+    }
+
+    .hero-stat {
+      background: rgba(255, 255, 255, .08);
+      border: 1px solid rgba(255, 255, 255, .14);
+      border-radius: 22px;
+      padding: 1.15rem 1.2rem;
+      backdrop-filter: blur(10px)
+    }
+
+    .hero-stat .value {
+      display: block;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2.2rem;
+      letter-spacing: .04em;
+      color: var(--gold-light);
+      line-height: 1
+    }
+
+    .hero-stat .label {
+      display: block;
+      margin-top: .45rem;
+      color: rgba(255, 255, 255, .72);
+      font-size: .88rem
+    }
+
+    .hero-panel {
+      position: relative;
+      margin-left: auto;
+      max-width: 420px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, .92), rgba(255, 255, 255, .82));
+      color: var(--ink);
+      border-radius: 28px;
+      padding: 1.6rem;
+      box-shadow: var(--shadow);
+      overflow: hidden
+    }
+
+    .hero-panel:before {
+      content: "";
+      position: absolute;
+      inset: 0 auto auto 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--red), var(--gold))
+    }
+
+    .hero-panel h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      margin-bottom: .6rem
+    }
+
+    .hero-panel p {
+      color: var(--muted);
+      line-height: 1.8;
+      margin-bottom: 1.2rem
+    }
+
+    .panel-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: .8rem
+    }
+
+    .panel-list li {
+      display: flex;
+      align-items: center;
+      gap: .8rem;
+      padding: .85rem 1rem;
+      border-radius: 16px;
+      background: #fff;
+      border: 1px solid rgba(0, 0, 0, .06)
+    }
+
+    .panel-list i {
+      width: 40px;
+      height: 40px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      background: rgba(212, 175, 55, .12);
+      color: var(--red)
+    }
+
+    .floating-badges {
+      position: absolute;
+      inset: auto auto 6% 5%;
+      z-index: 2;
+      display: flex;
+      gap: .8rem;
+      flex-wrap: wrap;
+      max-width: 520px
+    }
+
+    .floating-badge {
+      background: rgba(255, 255, 255, .1);
+      border: 1px solid rgba(255, 255, 255, .16);
+      border-radius: 999px;
+      padding: .7rem 1rem;
+      color: rgba(255, 255, 255, .82);
+      font-size: .82rem;
+      backdrop-filter: blur(10px)
+    }
+
+    .spotlight-card,
+    .feature-card,
+    .path-card,
+    .career-card,
+    .course-card {
+      border-radius: 24px;
+      border: 1px solid rgba(0, 0, 0, .07);
+      background: rgba(255, 255, 255, .86);
+      box-shadow: 0 4px 18px rgba(0, 0, 0, .06)
+    }
+
+    .spotlight-card {
+      padding: 2rem;
+      height: 100%
+    }
+
+    .spotlight-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 54px;
+      height: 54px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(210, 35, 42, .12), rgba(212, 175, 55, .18));
+      color: var(--red);
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.5rem;
+      letter-spacing: .06em;
+      margin-bottom: 1rem
+    }
+
+    .spotlight-card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.9rem;
+      margin-bottom: .85rem
+    }
+
+    .spotlight-card p {
+      color: var(--muted);
+      line-height: 1.8;
+      margin: 0
+    }
+
+    .course-showcase {
+      position: relative;
+      overflow: hidden;
+      background: radial-gradient(circle at top right, rgba(212, 175, 55, .12), transparent 22%), linear-gradient(180deg, #fff, #fbf8f4)
+    }
+
+    .course-card {
+      position: relative;
+      overflow: hidden;
+      height: 100%;
+      transition: transform var(--trans), box-shadow var(--trans)
+    }
+
+    .course-card:hover {
+      transform: translateY(-10px);
+      box-shadow: var(--shadow)
+    }
+
+    .course-image {
+      height: 250px;
+      overflow: hidden
+    }
+
+    .course-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .8s ease
+    }
+
+    .course-card:hover .course-image img {
+      transform: scale(1.08)
+    }
+
+    .course-body {
+      padding: 2rem
+    }
+
+    .course-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      padding: .45rem .8rem;
+      border-radius: 999px;
+      background: rgba(212, 175, 55, .12);
+      color: var(--red);
+      font-size: .72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      margin-bottom: 1rem
+    }
+
+    .course-card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      margin-bottom: .9rem
+    }
+
+    .course-card p {
+      color: var(--muted);
+      line-height: 1.8
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: .8rem;
+      margin: 1.3rem 0 1.4rem
+    }
+
+    .meta-item {
+      padding: .9rem 1rem;
+      border-radius: 16px;
+      background: rgba(15, 15, 15, .03);
+      border: 1px solid rgba(0, 0, 0, .05)
+    }
+
+    .meta-item .label {
+      display: block;
+      color: #9CA3AF;
+      font-size: .72rem;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      margin-bottom: .35rem
+    }
+
+    .meta-item .value {
+      font-size: .95rem;
+      font-weight: 600
+    }
+
+    .course-points {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1.5rem;
+      display: grid;
+      gap: .75rem
+    }
+
+    .course-points li {
+      display: flex;
+      gap: .7rem;
+      color: var(--muted);
+      line-height: 1.7
+    }
+
+    .course-points i {
+      color: var(--gold);
+      margin-top: .2rem
+    }
+
+    .ribbon-wrap {
+      overflow: hidden;
+      border-top: 1px solid rgba(0, 0, 0, .06);
+      border-bottom: 1px solid rgba(0, 0, 0, .06);
+      background: var(--ink)
+    }
+
+    .ribbon {
+      display: flex;
+      width: max-content;
+      gap: 1rem;
+      padding: 1rem 0;
+      animation: marquee 24s linear infinite
+    }
+
+    .ribbon span {
+      color: rgba(255, 255, 255, .9);
+      text-transform: uppercase;
+      letter-spacing: .18em;
+      font-size: .78rem;
+      font-weight: 700;
+      white-space: nowrap
+    }
+
+    .ribbon span strong {
+      color: var(--gold-light)
+    }
+
+    @keyframes marquee {
+      from {
+        transform: translateX(0)
+      }
+
+      to {
+        transform: translateX(-50%)
+      }
+    }
+
+    .feature-card,
+    .path-card,
+    .career-card {
+      padding: 1.6rem;
+      height: 100%;
+      transition: transform var(--trans), box-shadow var(--trans)
+    }
+
+    .feature-card:hover,
+    .path-card:hover,
+    .career-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 14px 40px rgba(0, 0, 0, .10)
+    }
+
+    .feature-icon,
+    .career-icon {
+      width: 56px;
+      height: 56px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(210, 35, 42, .12), rgba(212, 175, 55, .18));
+      color: var(--red);
+      font-size: 1.2rem;
+      margin-bottom: 1rem
+    }
+
+    .feature-card h3,
+    .path-card h3,
+    .career-card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      margin-bottom: .7rem
+    }
+
+    .feature-card p,
+    .path-card p,
+    .career-card p {
+      color: var(--muted);
+      line-height: 1.8;
+      margin: 0
+    }
+
+    .timeline {
+      display: grid;
+      gap: 1.2rem
+    }
+
+    .path-card {
+      position: relative;
+      overflow: hidden
+    }
+
+    .path-card:before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 5px;
+      background: linear-gradient(180deg, var(--red), var(--gold))
+    }
+
+    .path-step {
+      color: var(--gold);
+      text-transform: uppercase;
+      font-size: .72rem;
+      letter-spacing: .16em;
+      font-weight: 700;
+      margin-bottom: .7rem;
+      display: inline-block
+    }
+
+    .dark-band {
+      background: radial-gradient(circle at 10% 20%, rgba(212, 175, 55, .10), transparent 20%), radial-gradient(circle at 90% 80%, rgba(210, 35, 42, .14), transparent 20%), linear-gradient(180deg, #121212, #0a0a0a);
+      color: #fff
+    }
+
+    .dark-band .sec-copy,
+    .dark-band .career-card p,
+    .dark-band .accordion-button,
+    .dark-band .accordion-body {
+      color: rgba(255, 255, 255, .78)
+    }
+
+    .career-card {
+      background: rgba(255, 255, 255, .06);
+      border-color: rgba(255, 255, 255, .08);
+      box-shadow: none
+    }
+
+    .faq-shell {
+      background: rgba(255, 255, 255, .06);
+      border: 1px solid rgba(255, 255, 255, .10);
+      border-radius: 24px;
+      padding: 1.2rem
+    }
+
+    .accordion-item {
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid rgba(255, 255, 255, .08)
+    }
+
+    .accordion-button {
+      background: transparent;
+      color: #fff;
+      font-weight: 600;
+      box-shadow: none !important;
+      padding: 1.2rem .4rem
+    }
+
+    .accordion-button:not(.collapsed) {
+      background: transparent;
+      color: var(--gold-light)
+    }
+
+    .accordion-button:after {
+      filter: invert(1);
+      opacity: .8
+    }
+
+    .accordion-body {
+      padding: 0 .4rem 1.2rem;
+      line-height: 1.8
+    }
+
+    .cta-banner {
+      overflow: hidden;
+      border-radius: 32px;
+      padding: 3rem;
+      background: radial-gradient(circle at top left, rgba(212, 175, 55, .18), transparent 24%), radial-gradient(circle at bottom right, rgba(210, 35, 42, .16), transparent 24%), linear-gradient(135deg, #fff, #fbf6ee);
+      border: 1px solid rgba(0, 0, 0, .06);
+      box-shadow: var(--shadow)
+    }
+
+    .cta-banner h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.3rem, 5vw, 4rem);
+      line-height: .95;
+      margin-bottom: 1rem
+    }
+
+    .cta-banner p {
+      max-width: 720px;
+      color: var(--muted);
+      line-height: 1.8;
+      margin-bottom: 1.5rem
+    }
+
+    .sr {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity .7s ease, transform .7s ease
+    }
+
+    .sr.visible {
+      opacity: 1;
+      transform: translateY(0)
+    }
+
+    .sr-delay-1 {
+      transition-delay: .08s
+    }
+
+    .sr-delay-2 {
+      transition-delay: .16s
+    }
+
+    .sr-delay-3 {
+      transition-delay: .24s
+    }
+
+    .sr-delay-4 {
+      transition-delay: .32s
+    }
+
+    @media(max-width:991px) {
+      .hero-grid {
+        padding-top: 7rem
+      }
+
+      .hero-panel {
+        margin-top: 2rem;
+        max-width: 100%
+      }
+
+      .hero-stats {
+        grid-template-columns: 1fr;
+        max-width: 100%
+      }
+
+      .floating-badges {
+        position: static;
+        margin-top: 2rem
+      }
+    }
+
+    @media(max-width:575px) {
+
+      .section-space,
+      .section-space-lg {
+        padding: 4.5rem 0
+      }
+
+      .cta-banner {
+        padding: 2rem 1.4rem
+      }
+
+      .course-body,
+      .spotlight-card,
+      .feature-card,
+      .path-card,
+      .career-card {
+        padding: 1.35rem
+      }
+    }
+
+    @media(max-width:767px) {
+      .hero {
+        min-height: auto
+      }
+
+      .hero-grid {
+        padding-top: 6.5rem;
+        padding-bottom: 3rem
+      }
+
+      .hero .row {
+        row-gap: 1.5rem
+      }
+
+      .hero-title {
+        font-size: clamp(2.6rem, 13vw, 4rem);
+        line-height: 1.1;
+        max-width: 100%
+      }
+
+      .hero-copy {
+        max-width: 100%;
+        font-size: .98rem;
+        line-height: 1.75
+      }
+
+      .hero-cta {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: .75rem
+      }
+
+      .hero-cta a {
+        width: 100%
+      }
+
+      .hero-panel {
+        margin-left: 0;
+        max-width: 100%;
+        padding: 1.2rem;
+        border-radius: 20px
+      }
+
+      .panel-list li {
+        align-items: flex-start
+      }
+
+      .floating-badges {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: .65rem
+      }
+
+      .floating-badge {
+        width: 100%;
+        text-align: center;
+        padding: .75rem .85rem;
+        font-size: .76rem
+      }
+
+      .hero-stats {
+        gap: .75rem;
+        margin-top: 1.5rem
+      }
+
+      .hero-stat {
+        padding: 1rem
+      }
+
+      .breadcrumb-custom {
+        flex-wrap: wrap
+      }
+    }
+
+    @media(max-width:575px) {
+      .floating-badges {
+        grid-template-columns: 1fr
+      }
+
+      .hero-title {
+        font-size: clamp(2.3rem, 12vw, 3.4rem);
+        line-height: 1.1;
+      }
+    }
+
+    @media(max-width:480px) {
+      .hero-title {
+        font-size: clamp(2rem, 13vw, 2.8rem);
+        line-height: 1.15;
+      }
+    }
+
+    .pc-code {
+      font-family: 'Outfit', sans-serif;
+      font-size: .65rem;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--red);
+      display: flex;
+      align-items: center;
+      gap: .35rem;
+      margin-bottom: .5rem;
+    }
+
+    .pc-code::before {
+      content: '';
+      display: inline-block;
+      width: 14px;
+      height: 2px;
+      background: var(--red);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="topbar-placeholder"></div>
+  <div id="navbar-placeholder"></div>
+
+  <header class="hero">
+    <div class="container-xl hero-grid">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <nav class="breadcrumb-custom sr"><a href="index.html">Home</a><span>/</span><a
+              href="#">Courses</a><span>/</span><span class="current">Digital Content Creation</span></nav><span
+            class="sec-eyebrow sr sr-delay-1">Visual Communication Course</span>
+          <h1 class="hero-title sr sr-delay-2">Design bold brands, digital stories, and <span
+              class="accent">career-ready visuals</span>.</h1>
+          <p class="hero-copy sr sr-delay-3">This redesigned page stays inside your existing MAAC color theme while
+            giving Digital Content Creation a much stronger identity. It now focuses on branding, social media creatives, layout
+            systems, digital promotions, portfolio building, and practical design skills that feel relevant to the
+            course.</p>
+          <div class="hero-cta sr sr-delay-4"><a href="#enquiryModal" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn-red-local"><i
+                class="bi bi-send-fill"></i> Enquire Now</a><a href="#" class="btn-gold-local"><i
+                class="bi bi-grid-1x2-fill"></i> Explore More Courses</a><a href="#courseTracks"
+              class="btn-outline-light"><i class="bi bi-arrow-down-circle"></i> View Course Tracks</a></div>
+          <div class="hero-stats sr sr-delay-4">
+            <div class="hero-stat"><span class="value">3</span><span class="label">specialized learning tracks</span>
+            </div>
+            <div class="hero-stat"><span class="value">6+</span><span class="label">high-demand career pathways</span>
+            </div>
+            <div class="hero-stat"><span class="value">100%</span><span class="label">portfolio-first learning
+                focus</span></div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="hero-panel sr sr-delay-3"><span class="course-chip">Creative Focus</span>
+            <h3>Premium course page, same brand DNA</h3>
+            <p>The page keeps your red, gold, black, and white look, but upgrades the experience with deeper sections,
+              more movement, and stronger storytelling for the Digital Content Creation course.</p>
+            <ul class="panel-list">
+              <li><i class="bi bi-palette-fill"></i><span>Branding, typography, layout, and campaign design</span></li>
+              <li><i class="bi bi-instagram"></i><span>Social media creatives, reel covers, and ad visuals</span></li>
+              <li><i class="bi bi-briefcase-fill"></i><span>Portfolio building, practical assignments, and career
+                  prep</span></li>
+              <li><i class="bi bi-vector-pen"></i><span>Adobe workflow plus modern digital design practice</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="floating-badges"><span class="floating-badge">Brand Identity</span><span class="floating-badge">Social
+        Media Design</span><span class="floating-badge">Packaging Design</span><span class="floating-badge">UI
+        Visuals</span><span class="floating-badge">Portfolio Reviews</span></div> -->
+  </header>
+  <section class="section-space">
+    <div class="container-xl">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="spotlight-card sr"><span class="spotlight-number">01</span>
+            <h3>What students learn</h3>
+            <p>Students build foundations in design language, composition, color, typography, image handling, and visual
+              communication from concept to final output.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="spotlight-card sr sr-delay-1"><span class="spotlight-number">02</span>
+            <h3>How the course feels</h3>
+            <p>The course is positioned around practice, guided briefs, portfolio exercises, revision support, and
+              real-world creative tasks rather than tool-only teaching.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="spotlight-card sr sr-delay-2"><span class="spotlight-number">03</span>
+            <h3>Where it can lead</h3>
+            <p>Students can grow toward roles such as Digital Content Creationer, social media designer, brand visualizer,
+              packaging designer, layout artist, and UI-focused creative roles.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="ribbon-wrap">
+    <div class="ribbon"><span><strong>Photoshop</strong> image editing and
+        compositing</span><span><strong>Illustrator</strong> vector graphics and
+        branding</span><span><strong>InDesign</strong> layout systems and print-ready
+        design</span><span><strong>Lightroom</strong> image enhancement workflow</span><span><strong>Adobe
+          Dimension</strong> presentation visuals</span><span><strong>Portfolio Building</strong> industry-style
+        output</span><span><strong>Photoshop</strong> image editing and
+        compositing</span><span><strong>Illustrator</strong> vector graphics and
+        branding</span><span><strong>InDesign</strong> layout systems and print-ready
+        design</span><span><strong>Lightroom</strong> image enhancement workflow</span><span><strong>Adobe
+          Dimension</strong> presentation visuals</span><span><strong>Portfolio Building</strong> industry-style
+        output</span></div>
+  </div>
+
+  
+  <section class="section-space-lg course-showcase" id="courseTracks">
+    <div class="container-xl">
+      <div class="row align-items-end g-4 mb-5">
+        <div class="col-lg-7"><span class="sec-eyebrow sr">Course Tracks</span>
+          <h2 class="sec-title sr sr-delay-1">Choose the learning path that fits your creative goal.</h2>
+        </div>
+        <div class="col-lg-5">
+          <p class="sec-copy sr sr-delay-2 mb-0">Explore focused Digital Content Creation learning paths built for branding,
+            digital media, campaign visuals, and portfolio-ready creative work.</p>
+        </div>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-lg-5">
+          <article class="course-card sr d-flex flex-column">
+            <div class="course-image"><img
+                src="/Images/APDMD.png"
+                alt="Advanced Programme in Digital Media Design" /></div>
+            <div class="course-body d-flex flex-column flex-grow-1">
+              <div>
+                <div class="pc-code">APDMC Plus – <span style="text-transform: none; font-style: italic;
+           font-weight: 600; color: #1A1A1A;">Powered by CareerX | CreatorX</span> <span style="background: #ffcc00;
+           color: #000; padding: 2px 8px; border-radius: 12px; font-size: 0.6rem; font-weight: 800; margin-left:
+           5px; font-style: normal; text-transform: uppercase;">NEW</span></div>
+                <h3>Advanced Program in Digital Media Creation</h3>
+                <p>The digital landscape is evolving at lightning speed, and APDMC Plus is designed to keep you ahead. From graphic design fundamentals to advanced UI/UX strategies, motion graphics to web development, and 3D design to content creation, this program provides an all-in-one learning experience to build versatile and job-ready skills.</p>
+                <div class="meta-grid">
+                  <!-- <div class="meta-item"><span class="label">Best for</span><span class="value">Beginners to serious
+                      creative learners</span></div> -->
+                  <!-- <div class="meta-item"><span class="label">Focus</span><span class="value">Brand, print, digital,
+                      portfolio</span></div> -->
+                      <div class="meta-item"><span class="label">COURSE DURATION</span><span class="value">576 HRS</span></div>
+                </div>
+                <ul class="course-points">
+                  <li><i class="bi bi-check2-circle"></i><span>Digital Design</span></li>
+                  <li><i class="bi bi-check2-circle"></i><span>Video Production</span></li>
+                  <li><i class="bi bi-check2-circle"></i><span>UI/UX Design & Web Development</span></li>
+                  <li><i class="bi bi-check2-circle"></i><span>3D Content Design</span></li>
+                </ul>
+              </div>
+              <div class="mt-auto">
+                <a href="#enquiryModal" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn-red-local">Enquiry for APDMD</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-lg-5">
+          <article class="course-card sr sr-delay-1 d-flex flex-column">
+            <div class="course-image"><img
+                src="/Images/APDMC.png"
+                alt="Advanced Programme in Digital Media Creation" /></div>
+            <div class="course-body d-flex flex-column flex-grow-1">
+              <div>
+                <span class="course-chip">DGWA Plus</span>
+                <h3>Program in Graphics, Web & 2D Animation</h3>
+                <p>The digital world thrives on visually engaging experiences. DGWA Plus equips you with the skills to master graphic design, web development, and 2D animation, helping you craft compelling content for brands, websites, social media, and interactive media. Build a strong foundation in visual communication, UI/UX, animation, and motion design to bring your creative ideas to life.</p>
+                <div class="meta-grid">
+                  <!-- <div class="meta-item"><span class="label">Best for</span><span class="value"> Basics of Compositing And Interactive Desgin</span></div> -->
+                  <div class="meta-item"><span class="label">COURSE DURATION</span><span class="value">288 HRS</span></div>
+                </div>
+                <ul class="course-points">
+                  <li><i class="bi bi-check2-circle"></i><span>Interactive Desgin & Digital Design</span></li>
+                  <li><i class="bi bi-check2-circle"></i><span>Concepts of UI & UX Design </span></li>
+                  <li><i class="bi bi-check2-circle"></i><span>Fundamentals of 2D Animation</span></li>
+                  <li><i class="bi bi-check2-circle"></i><span>Portfolio Development</span></li>
+                </ul>
+              </div>
+              <div class="mt-auto">
+                <a href="#enquiryModal" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn-red-local">Enquiry for APDMC</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-lg-5">
+          <article class="course-card sr sr-delay-2 d-flex flex-column">
+            <div class="course-image"><img
+                src="/Images/Portfolio.png"
+                alt="Digital Content Creation skills and portfolio" /></div>
+            <div class="course-body d-flex flex-column flex-grow-1">
+              <div>
+                <span class="course-chip">APDMD</span>
+                <h3>Advanced Program in Digital Media & Design</h3>
+                <p>In today’s digital-first world, mastering design and interactive media is key to standing out. The APDMD course at MAAC provides a complete learning experience in graphic design, web development, interactive media, and 2D animation. Designed to meet industry demands, this all-in-one program equips you with the skills needed to lead in the evolving digital space.</p>
+                <div class="meta-grid">
+                  <div class="meta-item"><span class="label">COURSE DURATION</span><span class="value">384 HRS</span></div>
+                  <!-- <div class="meta-item"><span class="label">Focus</span><span class="value">Execution quality and
+                      presentation</span></div> -->
+                </div>
+                <ul class="course-points">
+                  <li><i class="bi bi-check2-circle"></i><span>Fundamentals of Drawing & Digital Design</span></li>
+                  <li><i class="bi bi-check2-circle"></i><span>Web Designing & Fundamentals of JavaScript</span></li>
+                  <li><i class="bi bi-check2-circle"></i><span>Responsive Design & Front-end Designing</span></li>
+                  <li><i class="bi bi-check2-circle"></i><span>Basics of 2D & Digital 2D Animation</span></li>
+                </ul>
+              </div>
+              <div class="mt-auto">
+                <a href="#enquiryModal" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn-red-local">Enquiry for APDMD</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-5">
+          <article class="course-card sr sr-delay-2 d-flex flex-column">
+            <div class="course-image"><img
+                src="/Images/UI-UX.png"
+                alt="Digital Content Creation skills and portfolio" /></div>
+            <div class="course-body d-flex flex-column flex-grow-1">
+              <div>
+                <span class="course-chip">UI & UX</span>
+                <h3>Program in UI & UX Design Pro</h3>
+                <p>As businesses go digital, UI/UX design has become the backbone of digital products, ensuring smooth, intuitive, and engaging user experiences. MAAC’s UI/UX Design Pro Course trains you in design thinking, user research, wireframing, prototyping, and interactive design, preparing you for a thriving career in the digital world. Stay ahead with AI-powered design tools and real-world projects that shape modern digital experiences.</p>
+                <div class="meta-grid">
+                  <div class="meta-item"><span class="label">COURSE DURATION</span><span class="value">192 HRS</span></div>
+                  <!-- <div class="meta-item"><span class="label">Focus</span><span class="value">Execution quality and
+                      presentation</span></div> -->
+                </div>
+                <ul class="course-points">
+                  <li><i class="bi bi-check2-circle"></i><span>Principles of Visual Communication</span></li>
+                  <li><i class="bi bi-check2-circle"></i><span>Design Principles & Design Thinking</span></li>
+                  <li><i class="bi bi-check2-circle"></i><span>Principles of User Centric Design</span></li>
+                  <li><i class="bi bi-check2-circle"></i><span>Content Management System</span></li>
+                </ul>
+              </div>
+              <div class="mt-auto">
+                <a href="#enquiryModal" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn-red-local">Enquiry for UI & UX</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-space">
+    <div class="container-xl">
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-5"><span class="sec-eyebrow sr">Why Learn Here</span>
+          <h2 class="sec-title sr sr-delay-1">A course built around ideas, not just buttons and tools.</h2>
+          <p class="sec-copy sr sr-delay-2">One of the strongest ideas behind the reference content is that students
+            should not stop at learning software steps. This page now reflects that idea through ideation, execution,
+            revisions, portfolio quality, and practical design thinking.</p>
+        </div>
+        <div class="col-lg-7">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="feature-card sr"><span class="feature-icon"><i class="bi bi-lightbulb-fill"></i></span>
+                <h3>Concept to communication</h3>
+                <p>Students learn how design solves a communication problem, not just how to use a tool panel.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="feature-card sr sr-delay-1"><span class="feature-icon"><i
+                    class="bi bi-columns-gap"></i></span>
+                <h3>Layout and typography depth</h3>
+                <p>Training includes hierarchy, readability, spacing, composition, and presentation discipline.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="feature-card sr sr-delay-2"><span class="feature-icon"><i class="bi bi-brush-fill"></i></span>
+                <h3>Creative output variety</h3>
+                <p>Work can include posters, social media posts, brand systems, packaging visuals, and promotional
+                  creatives.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="feature-card sr sr-delay-3"><span class="feature-icon"><i
+                    class="bi bi-briefcase-fill"></i></span>
+                <h3>Portfolio and placement readiness</h3>
+                <p>Students build polished samples that support internship applications, job interviews, and freelance
+                  pitching.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-space"
+    style="background:linear-gradient(180deg, rgba(242,240,234,.65), rgba(255,255,255,.95));">
+    <div class="container-xl">
+      <div class="row align-items-end g-4 mb-5">
+        <div class="col-lg-7"><span class="sec-eyebrow sr">Learning Journey</span>
+          <h2 class="sec-title sr sr-delay-1">A simple path from creative basics to industry presentation.</h2>
+        </div>
+        <div class="col-lg-5">
+          <p class="sec-copy sr sr-delay-2 mb-0">A clear journey helps students understand how the course grows their
+            skills from design fundamentals to polished portfolio work.</p>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="path-card sr"><span class="path-step">Phase 01</span>
+          <h3>Foundation</h3>
+          <p>Design principles, color understanding, visual balance, composition, typography basics, and image
+            preparation.</p>
+        </div>
+        <div class="path-card sr sr-delay-1"><span class="path-step">Phase 02</span>
+          <h3>Tool mastery</h3>
+          <p>Photoshop, Illustrator, InDesign, Lightroom, and presentation-oriented workflows with guided practice.</p>
+        </div>
+        <div class="path-card sr sr-delay-2"><span class="path-step">Phase 03</span>
+          <h3>Applied design briefs</h3>
+          <p>Brand campaigns, product presentations, poster systems, social media creatives, ad visuals, and content
+            layouts.</p>
+        </div>
+        <div class="path-card sr sr-delay-3"><span class="path-step">Phase 04</span>
+          <h3>Portfolio and career preparation</h3>
+          <p>Refinement, presentation quality, review sessions, portfolio curation, and role-based preparation for
+            interviews.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-space-lg dark-band">
+    <div class="container-xl">
+      <div class="row align-items-end g-4 mb-5">
+        <div class="col-lg-7"><span class="sec-eyebrow sr">Career Outcomes</span>
+          <h2 class="sec-title sr sr-delay-1">Design skills that can move into real creative roles.</h2>
+        </div>
+        <div class="col-lg-5">
+          <p class="sec-copy sr sr-delay-2 mb-0">These outcomes are shaped around practical Digital Content Creation opportunities
+            in branding, digital media, print, packaging, and content design.</p>
+        </div>
+      </div>
+      <div class="row g-4 mb-5">
+        <div class="col-md-6 col-xl-4">
+          <div class="career-card sr"><span class="career-icon"><i class="bi bi-easel2-fill"></i></span>
+            <h3>Digital Content Creationer</h3>
+            <p>Create brand assets, posters, ad visuals, presentations, and communication material for print and digital
+              use.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <div class="career-card sr sr-delay-1"><span class="career-icon"><i class="bi bi-instagram"></i></span>
+            <h3>Social Media Designer</h3>
+            <p>Build campaign creatives, story sets, thumbnails, reels covers, and fast-turnaround content for digital
+              brands.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <div class="career-card sr sr-delay-2"><span class="career-icon"><i class="bi bi-box-seam-fill"></i></span>
+            <h3>Packaging Designer</h3>
+            <p>Translate products into shelf-ready visual systems that balance aesthetics, readability, and brand
+              presence.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <div class="career-card sr"><span class="career-icon"><i class="bi bi-type-bold"></i></span>
+            <h3>Layout Artist</h3>
+            <p>Work on brochures, magazines, pitch decks, catalogues, menus, and high-clarity publication-style designs.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <div class="career-card sr sr-delay-1"><span class="career-icon"><i class="bi bi-vector-pen"></i></span>
+            <h3>Brand Visualizer</h3>
+            <p>Shape visual direction for campaigns and build identity systems with stronger storytelling and brand
+              recall.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <div class="career-card sr sr-delay-2"><span class="career-icon"><i class="bi bi-window-stack"></i></span>
+            <h3>UI-Focused Creative</h3>
+            <p>Support interface visuals, app graphics, banners, and digital design elements where clean hierarchy
+              matters.</p>
+          </div>
+        </div>
+      </div>
+      <div class="faq-shell sr">
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-4"><span class="sec-eyebrow">Student Questions</span>
+            <h3 class="font-display" style="font-size:2.4rem;line-height:.95;margin:1rem 0 1rem;">Quick answers before
+              you enquire.</h3>
+            <p class="sec-copy mb-0">These FAQs answer common student questions about software, beginner readiness,
+              project work, portfolio building, and career options.</p>
+          </div>
+          <div class="col-lg-8">
+            <div class="accordion accordion-flush" id="courseFaq">
+              <div class="accordion-item">
+                <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq1">What software will students learn?</button></h2>
+                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#courseFaq">
+                  <div class="accordion-body">Students can expect a workflow centered around Photoshop, Illustrator,
+                    InDesign, Lightroom, and presentation-oriented design practice, with project execution that goes
+                    beyond basic software familiarity.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#faq2">Is this useful for beginners after 12th?</button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#courseFaq">
+                  <div class="accordion-body">Yes. The page is written to welcome beginners and shows a learning path
+                    that starts with fundamentals before moving into software, creative briefs, and portfolio output.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#faq3">Will students work on practical projects?</button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#courseFaq">
+                  <div class="accordion-body">Yes. The structure emphasizes posters, social media creatives, campaign
+                    layouts, presentations, brand exercises, and portfolio-ready assignments so students build real
+                    output while learning.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#faq4">Does the course help with portfolio
+                    building?</button></h2>
+                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#courseFaq">
+                  <div class="accordion-body">Yes. Portfolio support is one of the strongest themes on this redesigned
+                    page because it is critical for internships, placements, and freelance opportunities.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#faq5">What kind of jobs can this lead to?</button></h2>
+                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#courseFaq">
+                  <div class="accordion-body">Students can grow toward roles such as Digital Content Creationer, social media
+                    designer, packaging designer, layout artist, visualizer, and UI-related creative positions depending
+                    on their portfolio direction.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-space">
+    <div class="container-xl">
+      <div class="cta-banner sr"><span class="sec-eyebrow">Take the Next Step</span>
+        <h2>Turn your creativity into a portfolio that feels hireable.</h2>
+        <p>Build a stronger creative foundation, learn industry design workflows, and create polished projects that help
+          you present yourself with confidence.</p>
+        <div class="d-flex flex-wrap gap-3"><a href="#enquiryModal" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn-red-local"><i
+              class="bi bi-chat-dots-fill"></i> Talk to Counsellor</a><a href="placements.html"
+            class="btn-gold-local"><i class="bi bi-award-fill"></i> View Placements</a></div>
+      </div>
+    </div>
+  </section>
+  <div id="footer-placeholder"></div>
+  <script src="component.js"></script>
+<script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    (function () { const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target) } }) }, { threshold: .14 }); document.querySelectorAll('.sr').forEach((el) => observer.observe(el)) })();
+  </script>
+</body>
+
+</html>

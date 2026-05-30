@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Game Design Courses in Ghaziabad | MAAC RDC</title>
+    <link rel="icon" href="Images/favicon.png" type="image/png" />
+    <meta name="description"
+        content="Learn game design, interactive game art, 3D modelling, texturing, lighting, rigging, level design and Unity workflows at MAAC Ghaziabad RDC." />
+    <meta name="keywords"
+        content="Game Design Ghaziabad, ADIDG, DGWA, game art, Unity, 3D modelling, texturing, level design, MAAC Ghaziabad" />
+    <meta name="author" content="MAAC Ghaziabad RDC" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://maacghaziabad.in/course-game-design.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Bebas+Neue&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { corePlugins: { preflight: false } };</script>
+    <style>
+        :root {
+            --red: #D2232A;
+            --red-dark: #A51B21;
+            --gold: #D4AF37;
+            --gold-light: #F0D060;
+            --white: #fff;
+            --ink: #0F0F0F;
+            --muted: #6B7280;
+            --glass: rgba(255, 255, 255, .78);
+            --shadow: 0 24px 70px rgba(0, 0, 0, .16);
+            --trans: .38s cubic-bezier(.4, 0, .2, 1)
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Outfit', sans-serif;
+            color: var(--ink);
+            background: radial-gradient(circle at 6% 0, rgba(212, 175, 55, .16), transparent 22%), radial-gradient(circle at 90% 18%, rgba(210, 35, 42, .12), transparent 18%), linear-gradient(180deg, #fff, #fbfaf7 42%, #fff);
+            overflow-x: hidden
+        }
+
+        .section-space {
+            padding: 6rem 0
+        }
+
+        .section-space-lg {
+            padding: 7.5rem 0
+        }
+
+        .sec-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: .65rem;
+            text-transform: uppercase;
+            letter-spacing: .22em;
+            font-size: .72rem;
+            font-weight: 700;
+            color: var(--gold)
+        }
+
+        .sec-eyebrow:before {
+            content: "";
+            width: 28px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--gold), var(--red));
+            display: inline-block
+        }
+
+        .sec-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2.4rem, 5vw, 4.8rem);
+            line-height: .95;
+            letter-spacing: -.03em;
+            font-weight: 700
+        }
+
+        .sec-copy {
+            color: var(--muted);
+            font-size: 1rem;
+            line-height: 1.8
+        }
+
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            color: #fff;
+            background: linear-gradient(135deg, rgba(8, 8, 8, .93), rgba(8, 8, 8, .48)), url('/Images/Game-Design-Banner.jpg') center/cover no-repeat
+        }
+
+        .hero:before,
+        .hero:after {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            pointer-events: none
+        }
+
+        .hero:before {
+            width: 360px;
+            height: 360px;
+            background: radial-gradient(circle, rgba(212, 175, 55, .26), transparent 70%);
+            top: 12%;
+            left: -5%;
+            animation: drift 8s ease-in-out infinite
+        }
+
+        .hero:after {
+            width: 480px;
+            height: 480px;
+            background: radial-gradient(circle, rgba(210, 35, 42, .24), transparent 70%);
+            right: -10%;
+            bottom: 6%;
+            animation: drift 10s ease-in-out infinite reverse
+        }
+
+        @keyframes drift {
+
+            0%,
+            100% {
+                transform: translate(0, 0)
+            }
+
+            50% {
+                transform: translate(12px, 20px)
+            }
+        }
+.hero-grid {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding-top: calc(var(--header-height, 120px) + 2rem);
+}
+@media (max-height: 580px) {
+    .hero-title { font-size: 3.5rem; }
+    .hero-copy { display: -webkit-box; --webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-top: 1rem; }
+}
+
+
+        .breadcrumb-custom {
+            display: flex;
+            gap: .55rem;
+            align-items: center;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: .12em;
+            font-size: .72rem;
+            font-weight: 600
+        }
+
+        .breadcrumb-custom a {
+            color: rgba(255, 255, 255, .62);
+            text-decoration: none
+        }
+
+        .breadcrumb-custom .current {
+            color: var(--gold-light)
+        }
+
+        .hero-title {
+            max-width: 850px;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(3.2rem, 8vw, 7.2rem);
+            line-height: 1.1;
+            letter-spacing: -.02em;
+            margin: 0
+        }
+
+        .hero-title .accent {
+            color: var(--gold-light);
+            font-style: italic
+        }
+
+        .hero-copy {
+            max-width: 670px;
+            margin-top: 1.4rem;
+            color: rgba(255, 255, 255, .82);
+            line-height: 1.8
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 2rem
+        }
+
+        .btn-local-red,
+        .btn-local-gold,
+        .btn-outline-light {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: .55rem;
+            border-radius: 999px;
+            padding: .95rem 1.6rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            font-size: .78rem;
+            font-weight: 700;
+            transition: transform var(--trans), background var(--trans), color var(--trans), box-shadow var(--trans)
+        }
+
+        .btn-local-red {
+            background: var(--red);
+            color: #fff;
+            box-shadow: 0 16px 34px rgba(210, 35, 42, .28)
+        }
+
+        .btn-local-red:hover {
+            background: var(--red-dark);
+            transform: translateY(-2px);
+            color: #fff;
+            box-shadow: 0 20px 44px rgba(210, 35, 42, .35)
+        }
+
+        .btn-local-gold {
+            background: var(--gold);
+            color: var(--ink);
+            box-shadow: 0 16px 34px rgba(212, 175, 55, .2)
+        }
+
+        .btn-local-gold:hover {
+            background: var(--gold-light);
+            transform: translateY(-2px);
+            color: var(--ink);
+            box-shadow: 0 20px 44px rgba(212, 175, 55, .3)
+        }
+
+        .btn-outline-light {
+            border: 1px solid rgba(255, 255, 255, .4);
+            color: #fff
+        }
+
+        .btn-outline-light:hover {
+            background: #fff;
+            color: var(--ink);
+            border-color: #fff;
+            transform: translateY(-2px)
+        }
+
+        .btn-local-red:hover {
+            background: var(--red-dark);
+            color: #fff;
+            transform: translateY(-3px)
+        }
+
+        .btn-local-gold {
+            background: var(--gold);
+            color: var(--ink);
+            box-shadow: 0 16px 34px rgba(212, 175, 55, .25)
+        }
+
+        .btn-local-gold:hover {
+            background: var(--gold-light);
+            color: var(--ink);
+            transform: translateY(-3px)
+        }
+
+        .hero-panel {
+            position: relative;
+            margin-left: auto;
+            max-width: 440px;
+            background: linear-gradient(180deg, rgba(255, 255, 255, .94), rgba(255, 255, 255, .84));
+            color: var(--ink);
+            border-radius: 28px;
+            padding: 1.6rem;
+            box-shadow: var(--shadow);
+            overflow: hidden
+        }
+
+        .hero-panel:before {
+            content: "";
+            position: absolute;
+            inset: 0 auto auto 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--red), var(--gold))
+        }
+
+        .hero-panel h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            margin-bottom: .6rem
+        }
+
+        .hero-panel p {
+            color: var(--muted);
+            line-height: 1.8
+        }
+
+        .panel-list {
+            list-style: none;
+            padding: 0;
+            margin: 1.1rem 0 0;
+            display: grid;
+            gap: .8rem
+        }
+
+        .panel-list li {
+            display: flex;
+            align-items: center;
+            gap: .8rem;
+            padding: .85rem 1rem;
+            border-radius: 16px;
+            background: #fff;
+            border: 1px solid rgba(0, 0, 0, .06)
+        }
+
+        .panel-list i {
+            width: 40px;
+            height: 40px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            background: rgba(212, 175, 55, .12);
+            color: var(--red)
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 1rem;
+            margin-top: 2.3rem;
+            max-width: 760px
+        }
+
+        .stat {
+            background: rgba(255, 255, 255, .08);
+            border: 1px solid rgba(255, 255, 255, .14);
+            border-radius: 22px;
+            padding: 1.15rem 1.2rem;
+            backdrop-filter: blur(10px)
+        }
+
+        .stat .value {
+            display: block;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2.2rem;
+            letter-spacing: .04em;
+            color: var(--gold-light);
+            line-height: 1
+        }
+
+        .stat .label {
+            display: block;
+            margin-top: .45rem;
+            color: rgba(255, 255, 255, .72);
+            font-size: .88rem
+        }
+
+        .cardx {
+            border-radius: 24px;
+            border: 1px solid rgba(0, 0, 0, .07);
+            background: rgba(255, 255, 255, .88);
+            box-shadow: 0 4px 18px rgba(0, 0, 0, .06);
+            padding: 2rem;
+            height: 100%;
+            transition: transform var(--trans), box-shadow var(--trans)
+        }
+
+        .cardx:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 14px 40px rgba(0, 0, 0, .10)
+        }
+
+        .icon {
+            width: 56px;
+            height: 56px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 16px;
+            background: linear-gradient(135deg, rgba(210, 35, 42, .12), rgba(212, 175, 55, .18));
+            color: var(--red);
+            font-size: 1.25rem;
+            margin-bottom: 1rem
+        }
+
+        .cardx h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.85rem;
+            margin-bottom: .75rem
+        }
+
+        .cardx p {
+            color: var(--muted);
+            line-height: 1.8;
+            margin: 0
+        }
+
+        .ribbon-wrap {
+            overflow: hidden;
+            background: var(--ink)
+        }
+
+        .ribbon {
+            display: flex;
+            width: max-content;
+            gap: 1rem;
+            padding: 1rem 0;
+            animation: marquee 24s linear infinite
+        }
+
+        .ribbon span {
+            color: rgba(255, 255, 255, .9);
+            text-transform: uppercase;
+            letter-spacing: .18em;
+            font-size: .78rem;
+            font-weight: 700;
+            white-space: nowrap
+        }
+
+        .ribbon strong {
+            color: var(--gold-light)
+        }
+
+        @keyframes marquee {
+            from {
+                transform: translateX(0)
+            }
+
+            to {
+                transform: translateX(-50%)
+            }
+        }
+
+        .programs {
+            background: radial-gradient(circle at top right, rgba(212, 175, 55, .12), transparent 22%), linear-gradient(180deg, #fff, #fbf8f4)
+        }
+
+        .program-card {
+            padding: 0;
+            overflow: hidden
+        }
+
+        .program-img {
+            position: relative;
+            height: 240px;
+            overflow: hidden
+        }
+
+        .program-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform .8s ease
+        }
+
+        .program-card:hover .program-img img {
+            transform: scale(1.08)
+        }
+
+        .pc-duration-tag {
+            position: absolute;
+            bottom: .9rem;
+            right: .9rem;
+            background: rgba(15, 15, 15, .8);
+            backdrop-filter: blur(8px);
+            color: var(--gold);
+            font-family: 'Outfit', sans-serif;
+            font-size: .65rem;
+            font-weight: 700;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            padding: .28rem .8rem;
+            border-radius: 6px;
+            border: 1px solid rgba(212, 175, 55, .25);
+        }
+
+        .program-body {
+            padding: 2rem
+        }
+
+        .chip {
+            display: inline-flex;
+            align-items: center;
+            gap: .4rem;
+            padding: .45rem .8rem;
+            border-radius: 999px;
+            background: rgba(212, 175, 55, .12);
+            color: var(--red);
+            font-size: .72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            margin-bottom: 1rem
+        }
+
+        .points {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0 1.5rem;
+            display: grid;
+            gap: .75rem
+        }
+
+        .points li {
+            display: flex;
+            gap: .7rem;
+            color: var(--muted);
+            line-height: 1.7
+        }
+
+        .points i {
+            color: var(--gold);
+            margin-top: .2rem
+        }
+
+        .timeline {
+            display: grid;
+            gap: 1.2rem
+        }
+
+        .path {
+            position: relative;
+            overflow: hidden
+        }
+
+        .path:before {
+            content: "";
+            position: absolute;
+            inset: 0 auto 0 0;
+            width: 5px;
+            background: linear-gradient(180deg, var(--red), var(--gold))
+        }
+
+        .path-step {
+            color: var(--gold);
+            text-transform: uppercase;
+            font-size: .72rem;
+            letter-spacing: .16em;
+            font-weight: 700;
+            margin-bottom: .7rem;
+            display: inline-block
+        }
+
+        .dark-band {
+            background: radial-gradient(circle at 10% 20%, rgba(212, 175, 55, .10), transparent 20%), radial-gradient(circle at 90% 80%, rgba(210, 35, 42, .14), transparent 20%), linear-gradient(180deg, #121212, #0a0a0a);
+            color: #fff
+        }
+
+        .dark-band .sec-copy,
+        .dark-band .cardx p,
+        .dark-band .accordion-button,
+        .dark-band .accordion-body {
+            color: rgba(255, 255, 255, .78)
+        }
+
+        .dark-band .cardx {
+            background: rgba(255, 255, 255, .06);
+            border-color: rgba(255, 255, 255, .08);
+            box-shadow: none
+        }
+
+        .faq-shell {
+            background: rgba(255, 255, 255, .06);
+            border: 1px solid rgba(255, 255, 255, .10);
+            border-radius: 24px;
+            padding: 1.2rem
+        }
+
+        .accordion-item {
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid rgba(255, 255, 255, .08)
+        }
+
+        .accordion-button {
+            background: transparent;
+            color: #fff;
+            font-weight: 600;
+            box-shadow: none !important;
+            padding: 1.2rem .4rem
+        }
+
+        .accordion-button:not(.collapsed) {
+            background: transparent;
+            color: var(--gold-light)
+        }
+
+        .accordion-button:after {
+            filter: invert(1);
+            opacity: .8
+        }
+
+        .accordion-body {
+            padding: 0 .4rem 1.2rem;
+            line-height: 1.8
+        }
+
+        .cta-banner {
+            border-radius: 32px;
+            padding: 3rem;
+            background: radial-gradient(circle at top left, rgba(212, 175, 55, .18), transparent 24%), radial-gradient(circle at bottom right, rgba(210, 35, 42, .16), transparent 24%), linear-gradient(135deg, #fff, #fbf6ee);
+            border: 1px solid rgba(0, 0, 0, .06);
+            box-shadow: var(--shadow)
+        }
+
+        .cta-banner h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2.3rem, 5vw, 4rem);
+            line-height: .95;
+            margin-bottom: 1rem
+        }
+
+        .cta-banner p {
+            max-width: 720px;
+            color: var(--muted);
+            line-height: 1.8
+        }
+
+        #mainFooter {
+            background: var(--ink);
+            color: rgba(255, 255, 255, .66);
+            padding: 5rem 0 2rem
+        }
+
+        .footer-heading {
+            color: var(--gold);
+            font-size: .75rem;
+            font-weight: 700;
+            letter-spacing: .18em;
+            text-transform: uppercase;
+            margin-bottom: 1.2rem
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0
+        }
+
+        .footer-links li {
+            margin-bottom: .7rem
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, .54);
+            text-decoration: none
+        }
+
+        .sr {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity .7s ease, transform .7s ease
+        }
+
+        .sr.visible {
+            opacity: 1;
+            transform: translateY(0)
+        }
+
+        .sr-delay-1 {
+            transition-delay: .08s
+        }
+
+        .sr-delay-2 {
+            transition-delay: .16s
+        }
+
+        .sr-delay-3 {
+            transition-delay: .24s
+        }
+
+        @media(max-width:991px) {
+            #topBar {
+                display: none
+            }
+
+            #mainNav {
+                top: 0
+            }
+
+            .hero-grid {
+                padding-top: 7rem
+            }
+
+            .hero-panel {
+                margin-top: 2rem;
+                max-width: 100%
+            }
+
+            .stats {
+                grid-template-columns: 1fr;
+                max-width: 100%
+            }
+        }
+
+        @media(max-width:575px) {
+
+            .section-space,
+            .section-space-lg {
+                padding: 4.5rem 0
+            }
+
+            .cta-banner,
+            .program-body,
+            .cardx {
+                padding: 1.35rem
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="topbar-placeholder"></div>
+    <div id="navbar-placeholder"></div>
+
+    <header class="hero">
+        <div class="container-xl hero-grid">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7">
+                    <nav class="breadcrumb-custom sr"><a href="index.html">Home</a><span>/</span><a
+                            href="#">Courses</a><span>/</span><span class="current">Game Design</span></nav>
+                    <span class="sec-eyebrow sr sr-delay-1">Interactive Design and Games</span>
+                    <h1 class="hero-title sr sr-delay-2">Build characters, creatures and <span
+                            class="accent">interactive game worlds</span>.</h1>
+                    <p class="hero-copy sr sr-delay-3">Learn game art and design for interactive experiences across
+                        consoles, computers, mobiles and immersive platforms, with a strong focus on game assets, level
+                        design, 3D modelling, texturing, rigging, lighting, Unity workflows and virtual production-ready
+                        skills.</p>
+                    <div class="hero-cta sr sr-delay-3"><a href="#enquiryModal" data-bs-toggle="modal"
+                            data-bs-target="#enquiryModal" class="btn-local-red"><i class="bi bi-send-fill"></i> Enquire
+                            Now</a><a href="#programs" class="btn-local-gold"><i class="bi bi-controller"></i> View
+                            Programs</a><a href="#workflow" class="btn-outline-light"><i
+                                class="bi bi-arrow-down-circle"></i> Game Pipeline</a></div>
+                    <div class="stats sr sr-delay-3">
+                        <div class="stat"><span class="value">3D</span><span class="label">asset and world art
+                                focus</span></div>
+                        <div class="stat"><span class="value">6+</span><span class="label">career pathways</span></div>
+                        <div class="stat"><span class="value">360</span><span class="label">game production view</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="hero-panel sr sr-delay-2"><span class="chip">What you master</span>
+                        <h3>Game-ready creative production</h3>
+                        <p>Move from idea and concept to playable-looking assets, believable worlds and portfolio-ready
+                            game art.</p>
+                        <ul class="panel-list">
+                            <li><i class="bi bi-person-bounding-box"></i><span>Character, creature and prop design for
+                                    games</span></li>
+                            <li><i class="bi bi-boxes"></i><span>3D modelling, texturing, lighting and look
+                                    development</span></li>
+                            <li><i class="bi bi-map-fill"></i><span>Level design, environment art and interactive world
+                                    building</span></li>
+                            <li><i class="bi bi-unity"></i><span>Unity workflows, game asset integration and
+                                    presentation</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="section-space">
+        <div class="container-xl">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="cardx sr"><span class="icon"><i class="bi bi-controller"></i></span>
+                        <h3>Design for interaction</h3>
+                        <p>Understand game thinking, player flow, level readability, scene composition and how art
+                            supports interactive experiences.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="cardx sr sr-delay-1"><span class="icon"><i class="bi bi-boxes"></i></span>
+                        <h3>Create game assets</h3>
+                        <p>Build props, environments, characters and creatures with modelling, texturing, lighting and
+                            game-ready presentation.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="cardx sr sr-delay-2"><span class="icon"><i class="bi bi-badge-vr-fill"></i></span>
+                        <h3>Prepare for new media</h3>
+                        <p>Connect game design learning with Unity, virtual production, AR/VR-adjacent workflows and
+                            immersive visual careers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="ribbon-wrap">
+        <div class="ribbon"><span><strong>Game Assets</strong> props and environments</span><span><strong>3D
+                    Modelling</strong> character and world forms</span><span><strong>Texturing</strong> material
+                detail</span><span><strong>Lighting</strong> mood and readability</span><span><strong>Unity</strong>
+                interactive workflow</span><span><strong>Level Design</strong> player flow</span><span><strong>Game
+                    Assets</strong> props and environments</span><span><strong>3D Modelling</strong> character and world
+                forms</span><span><strong>Texturing</strong> material detail</span><span><strong>Lighting</strong> mood
+                and readability</span><span><strong>Unity</strong> interactive workflow</span><span><strong>Level
+                    Design</strong> player flow</span></div>
+    </div>
+    <section class="section-space-lg programs" id="programs">
+        <div class="container-xl">
+            <div class="row align-items-end g-4 mb-5">
+                <div class="col-lg-7"><span class="sec-eyebrow sr">Program Tracks</span>
+                    <h2 class="sec-title sr sr-delay-1">Choose the game design path that fits your creative goal.</h2>
+                </div>
+                <div class="col-lg-4">
+                    <p class="sec-copy sr sr-delay-2 mb-0">Explore practical tracks built around interactive game
+                        design, game world art, asset creation and Unity-ready production skills.</p>
+                </div>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4">
+                    <article class="cardx program-card sr d-flex flex-column">
+                        <div class="program-img"><img
+                                src="/Images/ADIDG.png"
+                                alt="Advanced program in interactive design and games" />
+                            <div class="pc-duration-tag"><i>Course Duration - </i>288 HRS</div>
+                        </div>
+                                
+                        <div class="program-body d-flex flex-column flex-grow-1">
+                            <div>
+                                <span class="chip">3D GAME ART & INTEGRATION</span>
+                                <h3>3D Game Art & Integration</h3>
+                                <p>The 3D Game Art & Integration course is an intensive 1-year program designed to fast-track your career in game design. It covers all stages of game asset creation, from conceptualization to final integration in game engines like Unreal Engine and Unity. Through hands-on training, students learn 3D modeling, animation, texturing, sculpting, and real-time rendering, making them industry-ready game artists.</p>
+                                <ul class="points">
+                                    <li><i class="bi bi-check2-circle"></i><span>Generative AI for Digital Creators-Imagery.
+</span></li>
+                                    <li><i class="bi bi-check2-circle"></i><span>Digital Sculpting & Advanced CG Modeling.
+</span></li>
+                                    <li><i class="bi bi-check2-circle"></i><span>Photogrammetry Workflow & 3D-GenAI Workflow.</span></li>
+                                </ul>
+                            </div>
+                            <div class="mt-auto">
+                                <a href="#enquiryModal" data-bs-toggle="modal" data-bs-target="#enquiryModal"
+                                    class="btn-local-red">Enquiry for Game Design</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4">
+                    <article class="cardx program-card sr sr-delay-1 d-flex flex-column">
+                        <div class="program-img"><img
+                                src="/Images/Blog-Game-Design.png"
+                                alt="Game and world art course" />
+                            <div class="pc-duration-tag"><i>Course Duration - </i>480 HRS</div>
+                        </div>
+                        <div class="program-body d-flex flex-column flex-grow-1">
+                            <div>
+                                <span class="chip">APGDI</span>
+                                <h3>Advanced Program in Game Design & Integration (APGDI)</h3>
+                                <p>Master the art and technology of game design with APGDI, a comprehensive career course covering Game Art, Design & Integration for multiple platforms. Learn everything from 2D interactivity to Unreal Engine-based AR & VR gaming, preparing you for a dynamic career in the gaming industry.</p>
+                                <ul class="points">
+                                    <li><i class="bi bi-check2-circle"></i><span> Game Art & Design Advanced.</span></li>
+                                    <li><i class="bi bi-check2-circle"></i><span>Specialization in Mobile Gaming.</span></li>
+                                    <li><i class="bi bi-check2-circle"></i><span>Specialization in PC & Console </span></li>
+                                </ul>
+                            </div>
+                            <div class="mt-auto">
+                                <a href="#enquiryModal" data-bs-toggle="modal" data-bs-target="#enquiryModal"
+                                    class="btn-local-red">Enquiry for Game Design</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4">
+                    <article class="cardx program-card sr sr-delay-2 d-flex flex-column">
+                        <div class="program-img"><img
+                                src="/Images/PMGDI.png"
+                                alt="Unity and interactive game workflow" />
+                            <div class="pc-duration-tag"><i>Course Duration - </i>388 HRS</div>
+                            </div>
+                        <div class="program-body d-flex flex-column flex-grow-1">
+                            <div>
+                                <span class="chip">PMGDI</span>
+                                <h3>Program in Mobile Game Design & Integration</h3>
+                                <p>Step into the ever-expanding world of mobile gaming with PMGDI. This career-focused program equips you with the technical and creative expertise to design, develop, and publish mobile games. Covering everything from game art fundamentals to advanced integration in Unity and Unreal Engine, PMGDI prepares you for a thriving career in mobile gaming.</p>
+                                <ul class="points">
+                                    <li><i class="bi bi-check2-circle"></i><span>Game Production & Design Documents.</span></li>
+                                    <li><i class="bi bi-check2-circle"></i><span>Game Theory & Pre-Production.</span></li>
+                                    <li><i class="bi bi-check2-circle"></i><span>Creating a First Person Shooter Mobile Game.</span></li>
+                                </ul>
+                            </div>
+                            <div class="mt-auto">
+                                <a href="#enquiryModal" data-bs-toggle="modal" data-bs-target="#enquiryModal"
+                                    class="btn-local-red">Enquiry for Game Design</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- <div class="col-lg-5">
+                    <article class="cardx program-card sr sr-delay-2 d-flex flex-column">
+                        <div class="program-img"><img
+                                src="/Images/APDMC.png"
+                                alt="Unity and interactive game workflow" />
+                            <div class="pc-duration-tag"><i>Course Duration - </i>388 HRS</div>
+                            </div>
+                        <div class="program-body d-flex flex-column flex-grow-1">
+                            <div>
+                                <span class="chip">ADIDG PLUS</span>
+                                <h3>Advanced Program in Interactive Design & Games</h3>
+                                <p>The ADIDG Plus course is a cutting-edge program designed to train students in Gaming, Metaverse, and 3D Design. This program equips learners with essential skills to excel in the fast-growing gaming and interactive media industries. From game art and UI design to real-time 3D integration in Unity and Unreal Engine, ADIDG Plus prepares you for a dynamic career in the Media & Entertainment industry and beyond.</p>
+                                <ul class="points">
+                                    <li><i class="bi bi-check2-circle"></i><span>Digital & Interactive Design.</span></li>
+                                    <li><i class="bi bi-check2-circle"></i><span>Digital Assets, Rael-Time 3D & Interactive Design.</span></li>
+                                    <li><i class="bi bi-check2-circle"></i><span>Motion & Performance Capture Integration.</span></li>
+                                </ul>
+                            </div>
+                            <div class="mt-auto">
+                                <a href="#enquiryModal" data-bs-toggle="modal" data-bs-target="#enquiryModal"
+                                    class="btn-local-red">Enquiry for Game Design</a>
+                            </div>
+                        </div>
+                    </article>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <section class="section-space" id="workflow">
+        <div class="container-xl">
+            <div class="row align-items-end g-4 mb-5">
+                <div class="col-lg-7"><span class="sec-eyebrow sr">Game Pipeline</span>
+                    <h2 class="sec-title sr sr-delay-1">From concept sketch to interactive game world.</h2>
+                </div>
+                <div class="col-lg-5">
+                    <p class="sec-copy sr sr-delay-2 mb-0">The learning path mirrors how game art is built: ideate,
+                        model, texture, light, rig, assemble and present.</p>
+                </div>
+            </div>
+            <div class="timeline">
+                <div class="cardx path sr"><span class="path-step">Stage 01</span>
+                    <h3>Concept and research</h3>
+                    <p>Build moodboards, understand gameplay context, define character, creature, prop and world
+                        direction.</p>
+                </div>
+                <div class="cardx path sr sr-delay-1"><span class="path-step">Stage 02</span>
+                    <h3>Model and sculpt</h3>
+                    <p>Create 3D forms for props, environments, characters and creatures with strong shape language and
+                        scale.</p>
+                </div>
+                <div class="cardx path sr sr-delay-2"><span class="path-step">Stage 03</span>
+                    <h3>Texture, rig and light</h3>
+                    <p>Add surface detail, material behavior, believable lighting, simple rigs and game-ready
+                        presentation polish.</p>
+                </div>
+                <div class="cardx path sr sr-delay-3"><span class="path-step">Stage 04</span>
+                    <h3>Integrate and present</h3>
+                    <p>Prepare assets for Unity-style workflows, level presentation, interactive review and portfolio
+                        showcases.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-space-lg dark-band">
+        <div class="container-xl">
+            <div class="row align-items-end g-4 mb-5">
+                <div class="col-lg-7"><span class="sec-eyebrow sr">Career Outcomes</span>
+                    <h2 class="sec-title sr sr-delay-1">Game design skills for interactive media careers.</h2>
+                </div>
+                <div class="col-lg-5">
+                    <p class="sec-copy sr sr-delay-2 mb-0">Build skills for game asset creation, level design,
+                        modelling, texturing, rigging, AR/VR and virtual production pathways.</p>
+                </div>
+            </div>
+            <div class="row g-4 mb-5">
+                <div class="col-md-6 col-xl-4">
+                    <div class="cardx sr"><span class="icon"><i class="bi bi-boxes"></i></span>
+                        <h3>Game Asset Creator</h3>
+                        <p>Create props, environment pieces, collectibles, weapons, vehicles and game-ready 3D assets.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="cardx sr sr-delay-1"><span class="icon"><i class="bi bi-map"></i></span>
+                        <h3>Game Level Designer</h3>
+                        <p>Design level flow, player paths, interactive spaces, environment layout and scene
+                            readability.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="cardx sr sr-delay-2"><span class="icon"><i class="bi bi-box"></i></span>
+                        <h3>3D Modelling Artist</h3>
+                        <p>Build clean 3D forms for characters, props, environments, vehicles and stylized game worlds.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="cardx sr"><span class="icon"><i class="bi bi-brush-fill"></i></span>
+                        <h3>Texturing Artist</h3>
+                        <p>Create surface materials, stylized textures, believable wear, color detail and material
+                            variation.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="cardx sr sr-delay-1"><span class="icon"><i class="bi bi-person-arms-up"></i></span>
+                        <h3>Rigging Artist</h3>
+                        <p>Prepare characters, creatures and objects for animation, movement and interactive
+                            presentation.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="cardx sr sr-delay-2"><span class="icon"><i class="bi bi-badge-vr"></i></span>
+                        <h3>AR/VR and Virtual Production Developer</h3>
+                        <p>Support immersive, real-time and virtual production projects with game-ready asset and world
+                            design skills.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-shell sr">
+                <div class="row g-5 align-items-start">
+                    <div class="col-lg-4"><span class="sec-eyebrow">Student Questions</span>
+                        <h3 class="font-display" style="font-size:2.4rem;line-height:.95;margin:1rem 0 1rem;">Before you
+                            enter the game world.</h3>
+                        <p class="sec-copy mb-0">Quick answers for students comparing game design, game art and
+                            world-building courses.</p>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="accordion accordion-flush" id="courseFaq">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header"><button class="accordion-button" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faq1">What does this course focus
+                                        on?</button></h2>
+                                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#courseFaq">
+                                    <div class="accordion-body">It focuses on game design and interactive game art,
+                                        including characters, creatures, game assets, environments, level design, Unity
+                                        workflows and game-ready portfolio output.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faq2">Does this cover 3D modelling
+                                        and texturing?</button></h2>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#courseFaq">
+                                    <div class="accordion-body">Yes. 3D modelling, texturing, lighting and material
+                                        presentation are core parts of game asset and world art production.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faq3">Is Unity included in the
+                                        direction?</button></h2>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#courseFaq">
+                                    <div class="accordion-body">Yes. Unity-style workflows are included for asset
+                                        integration, interactive scene presentation and real-time review.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faq4">Can this support AR/VR or
+                                        virtual production goals?</button></h2>
+                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#courseFaq">
+                                    <div class="accordion-body">Yes. Game-ready asset creation and real-time environment
+                                        design are useful foundations for AR/VR, immersive media and virtual production
+                                        pathways.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faq5">What portfolio work can
+                                        students build?</button></h2>
+                                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#courseFaq">
+                                    <div class="accordion-body">Students can build character sheets, creature designs,
+                                        props, textured assets, environments, level layouts, Unity scene presentations
+                                        and game-world portfolio pieces.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-space">
+        <div class="container-xl">
+            <div class="cta-banner sr"><span class="sec-eyebrow">Take the Next Step</span>
+                <h2>Build the worlds players want to explore.</h2>
+                <p>Learn the creative and technical skills behind characters, creatures, environments, game assets,
+                    level layouts and interactive presentation.</p>
+                <div class="d-flex flex-wrap gap-3"><a href="#enquiryModal" data-bs-toggle="modal"
+                        data-bs-target="#enquiryModal" class="btn-local-red"><i class="bi bi-chat-dots-fill"></i> Talk
+                        to Counsellor</a><a href="#" class="btn-local-gold"><i
+                            class="bi bi-award-fill"></i> View Placements</a></div>
+            </div>
+        </div>
+    </section>
+    <div id="footer-placeholder"></div>
+    <script src="component.js"></script>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        (function () { const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target) } }) }, { threshold: .14 }); document.querySelectorAll('.sr').forEach((el) => observer.observe(el)) })();
+    </script>
+</body>
+
+</html>
